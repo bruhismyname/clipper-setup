@@ -1,0 +1,1575 @@
+{
+  "candidateId": "c06",
+  "videoSrc": "c06-clip.mp4",
+  "hookHeadline": "TRIED THE 3,000 FT STEAM CHALICE IN JAMAICA?!",
+  "durationInSeconds": 68.0,
+  "durationInFrames": 2040,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "start": 784.0,
+  "end": 852.0,
+  "startHms": "13:04.00",
+  "endHms": "14:12.00",
+  "scores": {
+    "hook": 35.0,
+    "retention": 50.0,
+    "fit": 95.0,
+    "composite": 52.0
+  },
+  "captions": [
+    {
+      "text": "take",
+      "start": 0.48,
+      "end": 2.2,
+      "startMs": 480,
+      "endMs": 2200,
+      "startFrame": 14,
+      "endFrame": 66
+    },
+    {
+      "text": "your",
+      "start": 0.76,
+      "end": 2.48,
+      "startMs": 760,
+      "endMs": 2480,
+      "startFrame": 23,
+      "endFrame": 74
+    },
+    {
+      "text": "time,",
+      "start": 0.839,
+      "end": 2.559,
+      "startMs": 839,
+      "endMs": 2559,
+      "startFrame": 25,
+      "endFrame": 77
+    },
+    {
+      "text": "man.",
+      "start": 1.16,
+      "end": 2.88,
+      "startMs": 1160,
+      "endMs": 2880,
+      "startFrame": 35,
+      "endFrame": 86
+    },
+    {
+      "text": "You",
+      "start": 1.22,
+      "end": 2.08,
+      "startMs": 1220,
+      "endMs": 2080,
+      "startFrame": 37,
+      "endFrame": 62
+    },
+    {
+      "text": "up,",
+      "start": 1.72,
+      "end": 3.44,
+      "startMs": 1720,
+      "endMs": 3440,
+      "startFrame": 52,
+      "endFrame": 103
+    },
+    {
+      "text": "man.",
+      "start": 1.8,
+      "end": 5.08,
+      "startMs": 1800,
+      "endMs": 5080,
+      "startFrame": 54,
+      "endFrame": 152
+    },
+    {
+      "text": "my",
+      "start": 2.24,
+      "end": 5.24,
+      "startMs": 2240,
+      "endMs": 5240,
+      "startFrame": 67,
+      "endFrame": 157
+    },
+    {
+      "text": "first",
+      "start": 2.4,
+      "end": 5.4,
+      "startMs": 2400,
+      "endMs": 5400,
+      "startFrame": 72,
+      "endFrame": 162
+    },
+    {
+      "text": "time,",
+      "start": 2.6,
+      "end": 5.6,
+      "startMs": 2600,
+      "endMs": 5600,
+      "startFrame": 78,
+      "endFrame": 168
+    },
+    {
+      "text": "you",
+      "start": 2.76,
+      "end": 5.76,
+      "startMs": 2760,
+      "endMs": 5760,
+      "startFrame": 83,
+      "endFrame": 173
+    },
+    {
+      "text": "take",
+      "start": 2.839,
+      "end": 5.839,
+      "startMs": 2839,
+      "endMs": 5839,
+      "startFrame": 85,
+      "endFrame": 175
+    },
+    {
+      "text": "your",
+      "start": 2.96,
+      "end": 5.96,
+      "startMs": 2960,
+      "endMs": 5960,
+      "startFrame": 89,
+      "endFrame": 179
+    },
+    {
+      "text": "time.",
+      "start": 3.04,
+      "end": 6.04,
+      "startMs": 3040,
+      "endMs": 6040,
+      "startFrame": 91,
+      "endFrame": 181
+    },
+    {
+      "text": "It's",
+      "start": 3.58,
+      "end": 5.08,
+      "startMs": 3580,
+      "endMs": 5080,
+      "startFrame": 107,
+      "endFrame": 152
+    },
+    {
+      "text": "your",
+      "start": 6.2,
+      "end": 8.96,
+      "startMs": 6200,
+      "endMs": 8960,
+      "startFrame": 186,
+      "endFrame": 269
+    },
+    {
+      "text": "time.",
+      "start": 6.32,
+      "end": 9.08,
+      "startMs": 6320,
+      "endMs": 9080,
+      "startFrame": 190,
+      "endFrame": 272
+    },
+    {
+      "text": "Take",
+      "start": 7.38,
+      "end": 8.76,
+      "startMs": 7380,
+      "endMs": 8760,
+      "startFrame": 221,
+      "endFrame": 263
+    },
+    {
+      "text": "You",
+      "start": 7.76,
+      "end": 11.24,
+      "startMs": 7760,
+      "endMs": 11240,
+      "startFrame": 233,
+      "endFrame": 337
+    },
+    {
+      "text": "trying",
+      "start": 7.8,
+      "end": 11.28,
+      "startMs": 7800,
+      "endMs": 11280,
+      "startFrame": 234,
+      "endFrame": 338
+    },
+    {
+      "text": "to",
+      "start": 8.0,
+      "end": 11.48,
+      "startMs": 8000,
+      "endMs": 11480,
+      "startFrame": 240,
+      "endFrame": 344
+    },
+    {
+      "text": "get",
+      "start": 8.08,
+      "end": 11.56,
+      "startMs": 8080,
+      "endMs": 11560,
+      "startFrame": 242,
+      "endFrame": 347
+    },
+    {
+      "text": "deep.",
+      "start": 8.28,
+      "end": 11.76,
+      "startMs": 8280,
+      "endMs": 11760,
+      "startFrame": 248,
+      "endFrame": 353
+    },
+    {
+      "text": "yeah.",
+      "start": 9.12,
+      "end": 11.6,
+      "startMs": 9120,
+      "endMs": 11600,
+      "startFrame": 274,
+      "endFrame": 348
+    },
+    {
+      "text": "Yeah,",
+      "start": 10.0,
+      "end": 11.24,
+      "startMs": 10000,
+      "endMs": 11240,
+      "startFrame": 300,
+      "endFrame": 337
+    },
+    {
+      "text": "know",
+      "start": 12.0,
+      "end": 14.84,
+      "startMs": 12000,
+      "endMs": 14840,
+      "startFrame": 360,
+      "endFrame": 445
+    },
+    {
+      "text": "what",
+      "start": 12.08,
+      "end": 14.92,
+      "startMs": 12080,
+      "endMs": 14920,
+      "startFrame": 362,
+      "endFrame": 448
+    },
+    {
+      "text": "it",
+      "start": 12.16,
+      "end": 15.0,
+      "startMs": 12160,
+      "endMs": 15000,
+      "startFrame": 365,
+      "endFrame": 450
+    },
+    {
+      "text": "is?",
+      "start": 12.24,
+      "end": 15.08,
+      "startMs": 12240,
+      "endMs": 15080,
+      "startFrame": 367,
+      "endFrame": 452
+    },
+    {
+      "text": "You",
+      "start": 13.3,
+      "end": 14.72,
+      "startMs": 13300,
+      "endMs": 14720,
+      "startFrame": 399,
+      "endFrame": 442
+    },
+    {
+      "text": "know",
+      "start": 13.32,
+      "end": 15.924,
+      "startMs": 13320,
+      "endMs": 15924,
+      "startFrame": 400,
+      "endFrame": 478
+    },
+    {
+      "text": "you're",
+      "start": 13.44,
+      "end": 16.044,
+      "startMs": 13440,
+      "endMs": 16044,
+      "startFrame": 403,
+      "endFrame": 481
+    },
+    {
+      "text": "up",
+      "start": 13.56,
+      "end": 16.164,
+      "startMs": 13560,
+      "endMs": 16164,
+      "startFrame": 407,
+      "endFrame": 485
+    },
+    {
+      "text": "on",
+      "start": 13.64,
+      "end": 16.244,
+      "startMs": 13640,
+      "endMs": 16244,
+      "startFrame": 409,
+      "endFrame": 487
+    },
+    {
+      "text": "the",
+      "start": 13.76,
+      "end": 16.364,
+      "startMs": 13760,
+      "endMs": 16364,
+      "startFrame": 413,
+      "endFrame": 491
+    },
+    {
+      "text": "mountain",
+      "start": 13.839,
+      "end": 16.443,
+      "startMs": 13839,
+      "endMs": 16443,
+      "startFrame": 415,
+      "endFrame": 493
+    },
+    {
+      "text": "top.",
+      "start": 14.2,
+      "end": 16.804,
+      "startMs": 14200,
+      "endMs": 16804,
+      "startFrame": 426,
+      "endFrame": 504
+    },
+    {
+      "text": "Higher.",
+      "start": 14.72,
+      "end": 16.48,
+      "startMs": 14720,
+      "endMs": 16480,
+      "startFrame": 442,
+      "endFrame": 494
+    },
+    {
+      "text": "up",
+      "start": 16.64,
+      "end": 20.64,
+      "startMs": 16640,
+      "endMs": 20640,
+      "startFrame": 499,
+      "endFrame": 619
+    },
+    {
+      "text": "on",
+      "start": 16.76,
+      "end": 20.76,
+      "startMs": 16760,
+      "endMs": 20760,
+      "startFrame": 503,
+      "endFrame": 623
+    },
+    {
+      "text": "the",
+      "start": 16.88,
+      "end": 20.88,
+      "startMs": 16880,
+      "endMs": 20880,
+      "startFrame": 506,
+      "endFrame": 626
+    },
+    {
+      "text": "peak",
+      "start": 16.96,
+      "end": 20.96,
+      "startMs": 16960,
+      "endMs": 20960,
+      "startFrame": 509,
+      "endFrame": 629
+    },
+    {
+      "text": "right",
+      "start": 17.2,
+      "end": 21.2,
+      "startMs": 17200,
+      "endMs": 21200,
+      "startFrame": 516,
+      "endFrame": 636
+    },
+    {
+      "text": "now,",
+      "start": 17.36,
+      "end": 21.36,
+      "startMs": 17360,
+      "endMs": 21360,
+      "startFrame": 521,
+      "endFrame": 641
+    },
+    {
+      "text": "you",
+      "start": 17.48,
+      "end": 21.48,
+      "startMs": 17480,
+      "endMs": 21480,
+      "startFrame": 524,
+      "endFrame": 644
+    },
+    {
+      "text": "know.",
+      "start": 17.56,
+      "end": 21.56,
+      "startMs": 17560,
+      "endMs": 21560,
+      "startFrame": 527,
+      "endFrame": 647
+    },
+    {
+      "text": "going",
+      "start": 18.2,
+      "end": 22.68,
+      "startMs": 18200,
+      "endMs": 22680,
+      "startFrame": 546,
+      "endFrame": 680
+    },
+    {
+      "text": "to",
+      "start": 18.32,
+      "end": 22.8,
+      "startMs": 18320,
+      "endMs": 22800,
+      "startFrame": 550,
+      "endFrame": 684
+    },
+    {
+      "text": "be",
+      "start": 18.4,
+      "end": 22.88,
+      "startMs": 18400,
+      "endMs": 22880,
+      "startFrame": 552,
+      "endFrame": 686
+    },
+    {
+      "text": "We",
+      "start": 18.48,
+      "end": 20.48,
+      "startMs": 18480,
+      "endMs": 20480,
+      "startFrame": 554,
+      "endFrame": 614
+    },
+    {
+      "text": "higher",
+      "start": 18.48,
+      "end": 22.96,
+      "startMs": 18480,
+      "endMs": 22960,
+      "startFrame": 554,
+      "endFrame": 689
+    },
+    {
+      "text": "up.",
+      "start": 18.76,
+      "end": 23.24,
+      "startMs": 18760,
+      "endMs": 23240,
+      "startFrame": 563,
+      "endFrame": 697
+    },
+    {
+      "text": "I'm",
+      "start": 20.0,
+      "end": 22.24,
+      "startMs": 20000,
+      "endMs": 22240,
+      "startFrame": 600,
+      "endFrame": 667
+    },
+    {
+      "text": "up",
+      "start": 20.56,
+      "end": 23.24,
+      "startMs": 20560,
+      "endMs": 23240,
+      "startFrame": 617,
+      "endFrame": 697
+    },
+    {
+      "text": "on",
+      "start": 20.68,
+      "end": 23.36,
+      "startMs": 20680,
+      "endMs": 23360,
+      "startFrame": 620,
+      "endFrame": 701
+    },
+    {
+      "text": "the",
+      "start": 20.8,
+      "end": 23.48,
+      "startMs": 20800,
+      "endMs": 23480,
+      "startFrame": 624,
+      "endFrame": 704
+    },
+    {
+      "text": "peak",
+      "start": 20.88,
+      "end": 23.56,
+      "startMs": 20880,
+      "endMs": 23560,
+      "startFrame": 626,
+      "endFrame": 707
+    },
+    {
+      "text": "right",
+      "start": 21.2,
+      "end": 23.88,
+      "startMs": 21200,
+      "endMs": 23880,
+      "startFrame": 636,
+      "endFrame": 716
+    },
+    {
+      "text": "now.",
+      "start": 21.32,
+      "end": 24.0,
+      "startMs": 21320,
+      "endMs": 24000,
+      "startFrame": 640,
+      "endFrame": 720
+    },
+    {
+      "text": "You",
+      "start": 21.82,
+      "end": 23.16,
+      "startMs": 21820,
+      "endMs": 23160,
+      "startFrame": 655,
+      "endFrame": 695
+    },
+    {
+      "text": "Oh,",
+      "start": 22.24,
+      "end": 25.56,
+      "startMs": 22240,
+      "endMs": 25560,
+      "startFrame": 667,
+      "endFrame": 767
+    },
+    {
+      "text": "you",
+      "start": 22.32,
+      "end": 25.64,
+      "startMs": 22320,
+      "endMs": 25640,
+      "startFrame": 670,
+      "endFrame": 769
+    },
+    {
+      "text": "going",
+      "start": 22.4,
+      "end": 25.72,
+      "startMs": 22400,
+      "endMs": 25720,
+      "startFrame": 672,
+      "endFrame": 772
+    },
+    {
+      "text": "to",
+      "start": 22.52,
+      "end": 25.84,
+      "startMs": 22520,
+      "endMs": 25840,
+      "startFrame": 676,
+      "endFrame": 775
+    },
+    {
+      "text": "hit",
+      "start": 22.6,
+      "end": 25.92,
+      "startMs": 22600,
+      "endMs": 25920,
+      "startFrame": 678,
+      "endFrame": 778
+    },
+    {
+      "text": "that",
+      "start": 22.68,
+      "end": 26.0,
+      "startMs": 22680,
+      "endMs": 26000,
+      "startFrame": 680,
+      "endFrame": 780
+    },
+    {
+      "text": "try",
+      "start": 23.24,
+      "end": 28.08,
+      "startMs": 23240,
+      "endMs": 28080,
+      "startFrame": 697,
+      "endFrame": 842
+    },
+    {
+      "text": "one.",
+      "start": 23.48,
+      "end": 28.32,
+      "startMs": 23480,
+      "endMs": 28320,
+      "startFrame": 704,
+      "endFrame": 850
+    },
+    {
+      "text": "I'll",
+      "start": 25.58,
+      "end": 28.0,
+      "startMs": 25580,
+      "endMs": 28000,
+      "startFrame": 767,
+      "endFrame": 840
+    },
+    {
+      "text": "me",
+      "start": 25.88,
+      "end": 30.52,
+      "startMs": 25880,
+      "endMs": 30520,
+      "startFrame": 776,
+      "endFrame": 916
+    },
+    {
+      "text": "get",
+      "start": 26.08,
+      "end": 30.72,
+      "startMs": 26080,
+      "endMs": 30720,
+      "startFrame": 782,
+      "endFrame": 922
+    },
+    {
+      "text": "it.",
+      "start": 26.4,
+      "end": 31.04,
+      "startMs": 26400,
+      "endMs": 31040,
+      "startFrame": 792,
+      "endFrame": 931
+    },
+    {
+      "text": "Let",
+      "start": 27.88,
+      "end": 30.2,
+      "startMs": 27880,
+      "endMs": 30200,
+      "startFrame": 836,
+      "endFrame": 906
+    },
+    {
+      "text": "it's",
+      "start": 28.28,
+      "end": 31.44,
+      "startMs": 28280,
+      "endMs": 31440,
+      "startFrame": 848,
+      "endFrame": 943
+    },
+    {
+      "text": "so",
+      "start": 28.48,
+      "end": 31.64,
+      "startMs": 28480,
+      "endMs": 31640,
+      "startFrame": 854,
+      "endFrame": 949
+    },
+    {
+      "text": "clean.",
+      "start": 28.76,
+      "end": 31.92,
+      "startMs": 28760,
+      "endMs": 31920,
+      "startFrame": 863,
+      "endFrame": 958
+    },
+    {
+      "text": "Damn,",
+      "start": 29.58,
+      "end": 31.16,
+      "startMs": 29580,
+      "endMs": 31160,
+      "startFrame": 887,
+      "endFrame": 935
+    },
+    {
+      "text": "It's",
+      "start": 29.68,
+      "end": 32.84,
+      "startMs": 29680,
+      "endMs": 32840,
+      "startFrame": 890,
+      "endFrame": 985
+    },
+    {
+      "text": "like",
+      "start": 29.76,
+      "end": 32.92,
+      "startMs": 29760,
+      "endMs": 32920,
+      "startFrame": 893,
+      "endFrame": 988
+    },
+    {
+      "text": "a",
+      "start": 29.88,
+      "end": 33.04,
+      "startMs": 29880,
+      "endMs": 33040,
+      "startFrame": 896,
+      "endFrame": 991
+    },
+    {
+      "text": "real",
+      "start": 29.92,
+      "end": 33.08,
+      "startMs": 29920,
+      "endMs": 33080,
+      "startFrame": 898,
+      "endFrame": 992
+    },
+    {
+      "text": "vape.",
+      "start": 30.2,
+      "end": 32.88,
+      "startMs": 30200,
+      "endMs": 32880,
+      "startFrame": 906,
+      "endFrame": 986
+    },
+    {
+      "text": "you",
+      "start": 31.28,
+      "end": 33.4,
+      "startMs": 31280,
+      "endMs": 33400,
+      "startFrame": 938,
+      "endFrame": 1002
+    },
+    {
+      "text": "don't",
+      "start": 31.36,
+      "end": 33.48,
+      "startMs": 31360,
+      "endMs": 33480,
+      "startFrame": 941,
+      "endFrame": 1004
+    },
+    {
+      "text": "smoke?",
+      "start": 31.56,
+      "end": 33.68,
+      "startMs": 31560,
+      "endMs": 33680,
+      "startFrame": 947,
+      "endFrame": 1010
+    },
+    {
+      "text": "Oh,",
+      "start": 32.22,
+      "end": 33.28,
+      "startMs": 32220,
+      "endMs": 33280,
+      "startFrame": 967,
+      "endFrame": 998
+    },
+    {
+      "text": "you",
+      "start": 32.44,
+      "end": 34.56,
+      "startMs": 32439,
+      "endMs": 34560,
+      "startFrame": 973,
+      "endFrame": 1037
+    },
+    {
+      "text": "finna",
+      "start": 32.56,
+      "end": 34.68,
+      "startMs": 32560,
+      "endMs": 34680,
+      "startFrame": 977,
+      "endFrame": 1040
+    },
+    {
+      "text": "be",
+      "start": 32.76,
+      "end": 34.88,
+      "startMs": 32759,
+      "endMs": 34880,
+      "startFrame": 983,
+      "endFrame": 1046
+    },
+    {
+      "text": "high.",
+      "start": 32.88,
+      "end": 34.6,
+      "startMs": 32880,
+      "endMs": 34600,
+      "startFrame": 986,
+      "endFrame": 1038
+    },
+    {
+      "text": "quit",
+      "start": 33.4,
+      "end": 36.08,
+      "startMs": 33400,
+      "endMs": 36080,
+      "startFrame": 1002,
+      "endFrame": 1082
+    },
+    {
+      "text": "smoking.",
+      "start": 33.68,
+      "end": 36.36,
+      "startMs": 33680,
+      "endMs": 36360,
+      "startFrame": 1010,
+      "endFrame": 1091
+    },
+    {
+      "text": "to",
+      "start": 34.62,
+      "end": 35.96,
+      "startMs": 34620,
+      "endMs": 35960,
+      "startFrame": 1039,
+      "endFrame": 1079
+    },
+    {
+      "text": "finna",
+      "start": 34.68,
+      "end": 37.4,
+      "startMs": 34680,
+      "endMs": 37400,
+      "startFrame": 1040,
+      "endFrame": 1122
+    },
+    {
+      "text": "be",
+      "start": 34.84,
+      "end": 37.56,
+      "startMs": 34840,
+      "endMs": 37560,
+      "startFrame": 1045,
+      "endFrame": 1127
+    },
+    {
+      "text": "high.",
+      "start": 35.0,
+      "end": 37.72,
+      "startMs": 35000,
+      "endMs": 37720,
+      "startFrame": 1050,
+      "endFrame": 1132
+    },
+    {
+      "text": "You",
+      "start": 35.96,
+      "end": 37.32,
+      "startMs": 35960,
+      "endMs": 37320,
+      "startFrame": 1079,
+      "endFrame": 1120
+    },
+    {
+      "text": "tastes",
+      "start": 36.04,
+      "end": 38.4,
+      "startMs": 36040,
+      "endMs": 38400,
+      "startFrame": 1081,
+      "endFrame": 1152
+    },
+    {
+      "text": "real",
+      "start": 36.32,
+      "end": 38.68,
+      "startMs": 36320,
+      "endMs": 38680,
+      "startFrame": 1090,
+      "endFrame": 1160
+    },
+    {
+      "text": "good",
+      "start": 36.52,
+      "end": 38.88,
+      "startMs": 36520,
+      "endMs": 38880,
+      "startFrame": 1096,
+      "endFrame": 1166
+    },
+    {
+      "text": "though.",
+      "start": 36.8,
+      "end": 39.16,
+      "startMs": 36800,
+      "endMs": 39160,
+      "startFrame": 1104,
+      "endFrame": 1175
+    },
+    {
+      "text": "It",
+      "start": 37.14,
+      "end": 38.32,
+      "startMs": 37140,
+      "endMs": 38320,
+      "startFrame": 1114,
+      "endFrame": 1150
+    },
+    {
+      "text": "it's",
+      "start": 37.4,
+      "end": 40.96,
+      "startMs": 37400,
+      "endMs": 40960,
+      "startFrame": 1122,
+      "endFrame": 1229
+    },
+    {
+      "text": "super",
+      "start": 37.6,
+      "end": 41.16,
+      "startMs": 37600,
+      "endMs": 41160,
+      "startFrame": 1128,
+      "endFrame": 1235
+    },
+    {
+      "text": "clean.",
+      "start": 37.92,
+      "end": 41.48,
+      "startMs": 37920,
+      "endMs": 41480,
+      "startFrame": 1138,
+      "endFrame": 1244
+    },
+    {
+      "text": "taste",
+      "start": 38.44,
+      "end": 42.72,
+      "startMs": 38440,
+      "endMs": 42720,
+      "startFrame": 1153,
+      "endFrame": 1282
+    },
+    {
+      "text": "that",
+      "start": 38.8,
+      "end": 43.08,
+      "startMs": 38800,
+      "endMs": 43080,
+      "startFrame": 1164,
+      "endFrame": 1292
+    },
+    {
+      "text": "way",
+      "start": 38.96,
+      "end": 43.24,
+      "startMs": 38960,
+      "endMs": 43240,
+      "startFrame": 1169,
+      "endFrame": 1297
+    },
+    {
+      "text": "Yeah,",
+      "start": 39.1,
+      "end": 40.88,
+      "startMs": 39100,
+      "endMs": 40880,
+      "startFrame": 1173,
+      "endFrame": 1226
+    },
+    {
+      "text": "more",
+      "start": 39.52,
+      "end": 43.8,
+      "startMs": 39520,
+      "endMs": 43800,
+      "startFrame": 1186,
+      "endFrame": 1314
+    },
+    {
+      "text": "than",
+      "start": 39.84,
+      "end": 44.12,
+      "startMs": 39840,
+      "endMs": 44120,
+      "startFrame": 1195,
+      "endFrame": 1324
+    },
+    {
+      "text": "like",
+      "start": 39.96,
+      "end": 44.24,
+      "startMs": 39960,
+      "endMs": 44240,
+      "startFrame": 1199,
+      "endFrame": 1327
+    },
+    {
+      "text": "I",
+      "start": 40.36,
+      "end": 44.64,
+      "startMs": 40360,
+      "endMs": 44640,
+      "startFrame": 1211,
+      "endFrame": 1339
+    },
+    {
+      "text": "taste",
+      "start": 40.44,
+      "end": 44.72,
+      "startMs": 40440,
+      "endMs": 44720,
+      "startFrame": 1213,
+      "endFrame": 1342
+    },
+    {
+      "text": "I",
+      "start": 40.46,
+      "end": 42.6,
+      "startMs": 40460,
+      "endMs": 42600,
+      "startFrame": 1214,
+      "endFrame": 1278
+    },
+    {
+      "text": "weed.",
+      "start": 40.88,
+      "end": 44.68,
+      "startMs": 40880,
+      "endMs": 44680,
+      "startFrame": 1226,
+      "endFrame": 1340
+    },
+    {
+      "text": "I",
+      "start": 42.6,
+      "end": 47.48,
+      "startMs": 42600,
+      "endMs": 47480,
+      "startFrame": 1278,
+      "endFrame": 1424
+    },
+    {
+      "text": "taste",
+      "start": 42.68,
+      "end": 47.56,
+      "startMs": 42680,
+      "endMs": 47560,
+      "startFrame": 1280,
+      "endFrame": 1427
+    },
+    {
+      "text": "weed.",
+      "start": 43.04,
+      "end": 47.92,
+      "startMs": 43040,
+      "endMs": 47920,
+      "startFrame": 1291,
+      "endFrame": 1438
+    },
+    {
+      "text": "for",
+      "start": 44.96,
+      "end": 50.36,
+      "startMs": 44960,
+      "endMs": 50360,
+      "startFrame": 1349,
+      "endFrame": 1511
+    },
+    {
+      "text": "songs,",
+      "start": 45.08,
+      "end": 50.48,
+      "startMs": 45080,
+      "endMs": 50480,
+      "startFrame": 1352,
+      "endFrame": 1514
+    },
+    {
+      "text": "40",
+      "start": 45.6,
+      "end": 51.0,
+      "startMs": 45600,
+      "endMs": 51000,
+      "startFrame": 1368,
+      "endFrame": 1530
+    },
+    {
+      "text": "bucks.",
+      "start": 45.84,
+      "end": 51.24,
+      "startMs": 45840,
+      "endMs": 51240,
+      "startFrame": 1375,
+      "endFrame": 1537
+    },
+    {
+      "text": "Beats",
+      "start": 47.38,
+      "end": 50.08,
+      "startMs": 47380,
+      "endMs": 50080,
+      "startFrame": 1421,
+      "endFrame": 1502
+    },
+    {
+      "text": "can't",
+      "start": 47.56,
+      "end": 51.4,
+      "startMs": 47560,
+      "endMs": 51400,
+      "startFrame": 1427,
+      "endFrame": 1542
+    },
+    {
+      "text": "believe",
+      "start": 47.8,
+      "end": 51.64,
+      "startMs": 47800,
+      "endMs": 51640,
+      "startFrame": 1434,
+      "endFrame": 1549
+    },
+    {
+      "text": "this",
+      "start": 48.04,
+      "end": 51.88,
+      "startMs": 48040,
+      "endMs": 51880,
+      "startFrame": 1441,
+      "endFrame": 1556
+    },
+    {
+      "text": "man.",
+      "start": 48.48,
+      "end": 52.32,
+      "startMs": 48480,
+      "endMs": 52320,
+      "startFrame": 1454,
+      "endFrame": 1570
+    },
+    {
+      "text": "I",
+      "start": 49.4,
+      "end": 51.32,
+      "startMs": 49400,
+      "endMs": 51320,
+      "startFrame": 1482,
+      "endFrame": 1540
+    },
+    {
+      "text": "I'm",
+      "start": 50.08,
+      "end": 52.72,
+      "startMs": 50080,
+      "endMs": 52720,
+      "startFrame": 1502,
+      "endFrame": 1582
+    },
+    {
+      "text": "so",
+      "start": 50.2,
+      "end": 52.84,
+      "startMs": 50200,
+      "endMs": 52840,
+      "startFrame": 1506,
+      "endFrame": 1585
+    },
+    {
+      "text": "grateful,",
+      "start": 50.4,
+      "end": 53.04,
+      "startMs": 50400,
+      "endMs": 53040,
+      "startFrame": 1512,
+      "endFrame": 1591
+    },
+    {
+      "text": "man.",
+      "start": 50.8,
+      "end": 53.44,
+      "startMs": 50800,
+      "endMs": 53440,
+      "startFrame": 1524,
+      "endFrame": 1603
+    },
+    {
+      "text": "This",
+      "start": 51.0,
+      "end": 53.64,
+      "startMs": 51000,
+      "endMs": 53640,
+      "startFrame": 1530,
+      "endFrame": 1609
+    },
+    {
+      "text": "is",
+      "start": 51.2,
+      "end": 53.84,
+      "startMs": 51200,
+      "endMs": 53840,
+      "startFrame": 1536,
+      "endFrame": 1615
+    },
+    {
+      "text": "crazy.",
+      "start": 51.32,
+      "end": 53.68,
+      "startMs": 51320,
+      "endMs": 53680,
+      "startFrame": 1540,
+      "endFrame": 1610
+    },
+    {
+      "text": "What",
+      "start": 52.72,
+      "end": 55.0,
+      "startMs": 52720,
+      "endMs": 55000,
+      "startFrame": 1582,
+      "endFrame": 1650
+    },
+    {
+      "text": "a",
+      "start": 52.88,
+      "end": 55.16,
+      "startMs": 52880,
+      "endMs": 55160,
+      "startFrame": 1586,
+      "endFrame": 1655
+    },
+    {
+      "text": "life.",
+      "start": 52.92,
+      "end": 55.2,
+      "startMs": 52920,
+      "endMs": 55200,
+      "startFrame": 1588,
+      "endFrame": 1656
+    },
+    {
+      "text": "ain't",
+      "start": 53.76,
+      "end": 56.32,
+      "startMs": 53760,
+      "endMs": 56320,
+      "startFrame": 1613,
+      "endFrame": 1690
+    },
+    {
+      "text": "never",
+      "start": 53.92,
+      "end": 56.48,
+      "startMs": 53920,
+      "endMs": 56480,
+      "startFrame": 1618,
+      "endFrame": 1694
+    },
+    {
+      "text": "experience",
+      "start": 54.2,
+      "end": 56.76,
+      "startMs": 54200,
+      "endMs": 56760,
+      "startFrame": 1626,
+      "endFrame": 1703
+    },
+    {
+      "text": "nothing",
+      "start": 54.68,
+      "end": 57.24,
+      "startMs": 54680,
+      "endMs": 57240,
+      "startFrame": 1640,
+      "endFrame": 1717
+    },
+    {
+      "text": "like",
+      "start": 54.92,
+      "end": 57.48,
+      "startMs": 54920,
+      "endMs": 57480,
+      "startFrame": 1648,
+      "endFrame": 1724
+    },
+    {
+      "text": "I",
+      "start": 54.96,
+      "end": 56.24,
+      "startMs": 54960,
+      "endMs": 56240,
+      "startFrame": 1649,
+      "endFrame": 1687
+    },
+    {
+      "text": "that.",
+      "start": 55.0,
+      "end": 57.48,
+      "startMs": 55000,
+      "endMs": 57480,
+      "startFrame": 1650,
+      "endFrame": 1724
+    },
+    {
+      "text": "I",
+      "start": 56.24,
+      "end": 58.68,
+      "startMs": 56240,
+      "endMs": 58680,
+      "startFrame": 1687,
+      "endFrame": 1760
+    },
+    {
+      "text": "ain't",
+      "start": 56.36,
+      "end": 58.8,
+      "startMs": 56360,
+      "endMs": 58800,
+      "startFrame": 1691,
+      "endFrame": 1764
+    },
+    {
+      "text": "never",
+      "start": 56.48,
+      "end": 58.92,
+      "startMs": 56480,
+      "endMs": 58920,
+      "startFrame": 1694,
+      "endFrame": 1768
+    },
+    {
+      "text": "experience",
+      "start": 56.72,
+      "end": 59.16,
+      "startMs": 56720,
+      "endMs": 59160,
+      "startFrame": 1702,
+      "endFrame": 1775
+    },
+    {
+      "text": "nothing",
+      "start": 57.12,
+      "end": 59.56,
+      "startMs": 57120,
+      "endMs": 59560,
+      "startFrame": 1714,
+      "endFrame": 1787
+    },
+    {
+      "text": "like",
+      "start": 57.36,
+      "end": 59.8,
+      "startMs": 57360,
+      "endMs": 59800,
+      "startFrame": 1721,
+      "endFrame": 1794
+    },
+    {
+      "text": "that.",
+      "start": 57.48,
+      "end": 61.0,
+      "startMs": 57480,
+      "endMs": 61000,
+      "startFrame": 1724,
+      "endFrame": 1830
+    },
+    {
+      "text": "fresh",
+      "start": 58.88,
+      "end": 64.08,
+      "startMs": 58880,
+      "endMs": 64080,
+      "startFrame": 1766,
+      "endFrame": 1922
+    },
+    {
+      "text": "as",
+      "start": 59.16,
+      "end": 64.36,
+      "startMs": 59160,
+      "endMs": 64360,
+      "startFrame": 1775,
+      "endFrame": 1931
+    },
+    {
+      "text": "everything",
+      "start": 59.28,
+      "end": 64.48,
+      "startMs": 59280,
+      "endMs": 64480,
+      "startFrame": 1778,
+      "endFrame": 1934
+    },
+    {
+      "text": "was,",
+      "start": 59.8,
+      "end": 65.0,
+      "startMs": 59800,
+      "endMs": 65000,
+      "startFrame": 1794,
+      "endFrame": 1950
+    },
+    {
+      "text": "so",
+      "start": 60.44,
+      "end": 65.64,
+      "startMs": 60440,
+      "endMs": 65640,
+      "startFrame": 1813,
+      "endFrame": 1969
+    },
+    {
+      "text": "was",
+      "start": 60.68,
+      "end": 65.88,
+      "startMs": 60680,
+      "endMs": 65880,
+      "startFrame": 1820,
+      "endFrame": 1976
+    },
+    {
+      "text": "the",
+      "start": 60.88,
+      "end": 66.08,
+      "startMs": 60880,
+      "endMs": 66080,
+      "startFrame": 1826,
+      "endFrame": 1982
+    },
+    {
+      "text": "experience",
+      "start": 61.0,
+      "end": 66.2,
+      "startMs": 61000,
+      "endMs": 66200,
+      "startFrame": 1830,
+      "endFrame": 1986
+    },
+    {
+      "text": "As",
+      "start": 61.28,
+      "end": 63.88,
+      "startMs": 61280,
+      "endMs": 63880,
+      "startFrame": 1838,
+      "endFrame": 1916
+    },
+    {
+      "text": "itself",
+      "start": 61.56,
+      "end": 66.76,
+      "startMs": 61560,
+      "endMs": 66760,
+      "startFrame": 1847,
+      "endFrame": 2003
+    },
+    {
+      "text": "for",
+      "start": 61.96,
+      "end": 67.16,
+      "startMs": 61960,
+      "endMs": 67160,
+      "startFrame": 1859,
+      "endFrame": 2015
+    },
+    {
+      "text": "us.",
+      "start": 62.16,
+      "end": 67.36,
+      "startMs": 62160,
+      "endMs": 67360,
+      "startFrame": 1865,
+      "endFrame": 2021
+    },
+    {
+      "text": "From",
+      "start": 62.76,
+      "end": 67.96,
+      "startMs": 62760,
+      "endMs": 67960,
+      "startFrame": 1883,
+      "endFrame": 2039
+    }
+  ],
+  "enableGrain": true,
+  "showSafeZone": false,
+  "hookAnimation": {
+    "enabled": true,
+    "impactFlash": true,
+    "cameraSlam": true,
+    "attentionBadge": {
+      "text": "\ud83d\udca8 TRADITIONAL RASTAFARIAN CHALICE",
+      "color": "#FF3B30"
+    }
+  },
+  "bodyAnimation": {
+    "enabled": true,
+    "retentionProgressBar": true,
+    "ambientCameraDrift": true,
+    "floatingParticles": true
+  },
+  "advancedVisualEffects": {
+    "enabled": true,
+    "vignette": true,
+    "chromaticAberration": true,
+    "lightLeak": true,
+    "filmGrain": true
+  },
+  "editorialGrid": true,
+  "technicalAnnotations": true,
+  "docTag": "ARCHIVE // VIRAL DOSSIER",
+  "stickers": [
+    {
+      "text": "NO COMFORT",
+      "subtext": "BLUE MOUNTAINS",
+      "startFrame": 15,
+      "endFrame": 135,
+      "position": "top-right"
+    }
+  ],
+  "talkingHead": {
+    "enabled": true,
+    "speakerName": "SHAWN K",
+    "speakerTag": "NO COMFORT HOST",
+    "position": "bottom-left",
+    "glowColor": "#FFE600",
+    "dynamicPunchZoom": true
+  },
+  "textMotion": [
+    {
+      "text": "SUPER CLEAN",
+      "startFrame": 90,
+      "endFrame": 144,
+      "color": "#FF3B30",
+      "position": "center"
+    }
+  ],
+  "outroCta": {
+    "enabled": true,
+    "channelName": "LYRICAL LEMONADE TV",
+    "seriesName": "NO COMFORT // EPISODE 01",
+    "ctaText": "WATCH FULL EPISODE ON YOUTUBE"
+  }
+}

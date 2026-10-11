@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Remotion & Media Build Artifacts
+.remotion/
+out/
+runs/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.mp3
+*.wav
+
+# OS & Environment Files
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
