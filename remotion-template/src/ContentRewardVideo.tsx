@@ -30,6 +30,7 @@ import { DynamicCinematicVignette, ChromaticAberrationPulse, AnamorphicLightLeak
 import { SafeZoneGuide } from "./components/SafeZoneGuide";
 import { EditorialGridBackground } from "./components/EditorialGridBackground";
 import { TechnicalAnnotations } from "./components/TechnicalAnnotations";
+import { SfxLayer, SfxConfig, defaultSfxConfig } from "./components/SfxLayer";
 
 export type {
   BRollItem,
@@ -39,6 +40,7 @@ export type {
   HookAnimationConfig,
   BodyAnimationConfig,
   AdvancedVisualEffectsConfig,
+  SfxConfig,
 };
 
 export type CaptionWord = {
@@ -87,6 +89,7 @@ export type ContentRewardVideoProps = {
   technicalAnnotations?: boolean;
   docTag?: string;
   showSafeZone?: boolean;
+  sfx?: SfxConfig;
   outroCta?: {
     enabled?: boolean;
     channelName?: string;
@@ -140,6 +143,7 @@ export const defaultRewardProps: ContentRewardVideoProps = {
   htmlMotion: [],
   talkingHead: undefined,
   textMotion: [],
+  sfx: defaultSfxConfig,
 };
 
 /* -------------------------------------------------------------
@@ -637,6 +641,7 @@ export const ContentRewardVideoComponent: React.FC<ContentRewardVideoProps> = ({
   technicalAnnotations = defaultRewardProps.technicalAnnotations,
   docTag = defaultRewardProps.docTag,
   showSafeZone = false,
+  sfx = defaultRewardProps.sfx,
   outroCta = {
     enabled: true,
     channelName: "LYRICAL LEMONADE TV",
@@ -741,6 +746,20 @@ export const ContentRewardVideoComponent: React.FC<ContentRewardVideoProps> = ({
     return 0;
   }, [brolls, htmlMotion]);
 
+  const sfxEvents = React.useMemo(
+    () => ({
+      durationInFrames: durationInFrames || defaultRewardProps.durationInFrames!,
+      hookImpact: hookAnimation?.enabled !== false && hookAnimation?.impactFlash !== false,
+      textMotion,
+      brolls,
+      htmlMotion,
+      stickerFrames: stickers.map((st) => st.startFrame),
+      statFrame: statCallout?.startFrame,
+      outroEnabled: outroCta?.enabled !== false,
+    }),
+    [durationInFrames, hookAnimation, textMotion, brolls, htmlMotion, stickers, statCallout, outroCta]
+  );
+
   return (
     <AbsoluteFill
       style={{
@@ -753,6 +772,7 @@ export const ContentRewardVideoComponent: React.FC<ContentRewardVideoProps> = ({
         <AbsoluteFill style={{ overflow: "hidden" }}>
           <OffthreadVideo
             src={resolvedVideoSrc}
+            muted
             style={{
               width: "100%",
               height: "100%",
@@ -1035,6 +1055,9 @@ export const ContentRewardVideoComponent: React.FC<ContentRewardVideoProps> = ({
           triggerFrames={chromaticTriggerFrames}
         />
       )}
+
+      {/* AUDIO: AUTO-CUED SFX (CC0 library in public/sfx) */}
+      <SfxLayer config={sfx} events={sfxEvents} />
 
       {/* 17. HOOK ANIMATION: IMPACT FLASH (Detik 0.0 - 0.2) */}
       {hookAnimation?.impactFlash !== false && <HookImpactFlash frame={frame} />}

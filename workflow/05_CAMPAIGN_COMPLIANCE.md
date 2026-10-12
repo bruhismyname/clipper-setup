@@ -2,11 +2,11 @@
 
 ## 1. Ikhtisar Ketentuan Program Content Rewards
 
-Agar klip video disetujui kurator campaign dan berhak mendapatkan reward, proses produksi dan submission wajib mematuhi 7 ketentuan berikut:
+Agar klip video disetujui kurator campaign dan berhak mendapatkan reward, proses produksi dan submission wajib mematuhi 8 ketentuan berikut:
 
 ---
 
-## 2. Rincian 7 Ketentuan Wajib
+## 2. Rincian 8 Ketentuan Wajib
 
 ### 1. Outro Redirection CTA ke YouTube
 * **Aturan**: Klip video wajib memuat arahan kepada penonton untuk menonton episode penuh di channel YouTube resmi.
@@ -37,7 +37,16 @@ Agar klip video disetujui kurator campaign dan berhak mendapatkan reward, proses
 * **Aturan**: Akun TikTok yang digunakan harus berstatus akun klip podcast yang telah terhubung pada dashboard Content Rewards.
 
 ### 7. Diferensiasi Visual
-* **Aturan**: Klip wajib melalui proses editing dan penyesuaian tata letak agar tidak terdeteksi sebagai reupload mentah oleh sistem hak cipta platform.
+* **Aturan**: Klip wajib melalui proses editing dan penyesuaian tata letak agar tidak terdeteksi sebagai reupload mentah oleh sistem hak cipta platform. Campaign menolak *"plain video cuts with standard auto-captions"* sebagai low-effort.
+* **Style B**: Crop penuh + caption saja **tidak boleh** dirilis. Overlay kata kunci (1 per 3–5 detik) dan cut reaksi wajib ada; `export_remotion.py` memberi peringatan bila tidak terpenuhi.
+
+### 8. Tanpa AI Editing & Aset AI, B-Roll Kontekstual
+* **Aturan**: Penggunaan tools AI editing otomatis atau generator video AI dilarang. B-roll boleh dipakai bila relevan, tetapi hook dan pesan inti harus tetap dari footage episode asli.
+* **Implementasi**:
+  - Prioritas B-roll: footage episode sendiri (`--broll-from`) → konten pemilik channel → screenshot halaman asli (`web_capture.py`) → stok berlisensi (`broll_fetch.py`).
+  - `broll_fetch.py` membuang hasil bertag AI (Pixabay juga memuat video *AI generated*) dan lisensi NC/ND. Jangan memakai Higgsfield, generator gambar/video AI, atau SFX AI.
+  - Lisensi setiap aset tercatat di `broll-manifest.json` / `sfx-manifest.json`; kredit CC BY / CC BY-SA tampil otomatis di kartu B-roll.
+  - Subtitle wajib akurat (urutan dan ejaan kata). Subtitle yang kacau mudah dianggap low-effort.
 
 ---
 
@@ -61,6 +70,17 @@ Tonton episode lengkapnya di YouTube: Lyrical Lemonade TV
 
 #nocomfort #lyricallemonade #steamchalice #podcastclips #rapculture
 ```
+
+### Pola ATM @dailyyskchaos (disarankan, kedua style)
+Baris pertama berupa pertanyaan atau klaim dengan 1–2 kata KAPITAL dan 1–2 emoji, lalu ajakan memilih sisi di komentar, lalu set hashtag inti yang **sama setiap posting** (nama show, `#podcastclips`, nama host). Total tetap maksimal 5 hashtag, termasuk hashtag wajib campaign.
+```text
+Would you date someone who acts EXACTLY like Sheldon? 😳🧠 Be honest 👇
+
+Full episode on YouTube: Lyrical Lemonade TV
+
+#lyricallemonade #newyorknights #podcastclips #stevensavoca
+```
+Topik debat menghasilkan komentar jauh lebih banyak (pada data ATM >10×), sehingga membantu syarat engagement ≥1%.
 
 ---
 

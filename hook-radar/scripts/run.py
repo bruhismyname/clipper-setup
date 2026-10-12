@@ -83,7 +83,9 @@ def download_video(url: str, rd: Path, max_height: int) -> Path | None:
     proc = run_cmd(
         fetch_mod.ytdlp_cmd()
         + [
-            "-f", f"bv*[height<={max_height}]+ba/b[height<={max_height}]/b",
+            # H.264 + AAC first (same as yt-dlp-edit.conf): YouTube's default AV1/Opus pick fails to merge
+            # here and is unsupported by Premiere; fall back to any codec only if H.264 is missing
+            "-f", f"bv*[vcodec^=avc1][height<={max_height}]+ba[acodec^=mp4a]/bv*[height<={max_height}]+ba/b",
             "--merge-output-format", "mp4",
             "--no-playlist",
             "--no-warnings",
@@ -260,6 +262,10 @@ def main(argv=None) -> int:
 
     # ---------------------------------------------------------- transcript
     log("[3/5] transcript")
+    if args.force:
+        # --force must also redo the transcript (e.g. switching captions -> whisper)
+        for name in ("words.json", "phrases.json", "sentences.json", "transcript_packed.md"):
+            (rd / name).unlink(missing_ok=True)
     tr = transcript_mod.build(
         fetched,
         rd,

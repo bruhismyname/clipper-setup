@@ -24,3 +24,8 @@ Thumbs.db
 *.log
 .env
 .env.local
+
+# Downloaded per-user assets (licenses tracked in each *-manifest.json)
+remotion-template/public/overlays/
+remotion-template/public/broll/
+remotion-template/public/screens/

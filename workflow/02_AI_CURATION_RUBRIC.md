@@ -31,12 +31,29 @@ Segmen yang dihasilkan oleh `hook-radar` dievaluasi menggunakan rubrik penilaian
 
 Dalam memilih kandidat dari file `runs/<id>/candidates.json`:
 
-1. **Pemeriksaan Durasi**:
-   - Untuk campaign Content Rewards: Rentang durasi ideal adalah **60-85 detik** (memenuhi batas minimum 1 menit untuk kelayakan program reward).
-   - Hindari segmen di bawah 60 detik jika campaign mensyaratkan durasi minimum 1 menit.
+1. **Pemeriksaan Durasi & Pilihan Style**:
+   - **Style A (Editorial Card)**: **20–45 detik**, untuk momen pendek dengan satu punchline. Completion rate tinggi.
+   - **Style B (Fullbleed Speaker)**: **45–90 detik**, untuk satu topik utuh (debat, cerita) yang punya banyak benda/konsep untuk divisualkan dan reaksi lawan bicara sebagai titik cut. Dasar ATM: 4 video teratas @dailyyskchaos berdurasi 94–128 detik (`architecture/04_STYLE_B_FULLBLEED.md`).
+   - Catat style di feedback loop agar bisa dibandingkan performanya.
 2. **Pemeriksaan Kalimat Pembuka**:
    - Hindari klip yang diawali kalimat tidak lengkap seperti kata sambung tanpa konteks ("And then", "Like I said").
    - Pilih klip yang langsung menyatakan subjek atau masalah utama di kalimat pertama.
-3. **Penyusunan Hook Headline**:
+   - **Tanpa jeda hening di 3 detik pertama.** Bila pertanyaan pembuka diikuti jeda panjang, mulai klip setelah jeda (`--start/--end` di `export_remotion.py`) dan biarkan headline membawa konteks pertanyaannya.
+   - **Framing respek**: tertawa *bersama* narasumber, bukan menertawakan. Ini penting untuk tamu yang rentan, misalnya peserta *Love on the Spectrum*.
+   - **Formula Hook ATM** (wajib Style B, disarankan Style A): kata pertama di detik 0,0 berupa salah satu dari 4 tipe:
+
+     | Tipe | Contoh |
+     |---|---|
+     | Pertanyaan relatable | "Has anybody noticed it's getting a lot harder to type on your iPhone?" |
+     | Dilema / would-you-rather | "Would you punch Sarah in the face… for a billion dollars?" |
+     | Klaim aneh | "Banana and avocado is supposed to taste like ice cream." |
+     | Misteri sehari-hari | "Where the hell do they build cruise ships?" |
+
+     Jika kalimat itu muncul di tengah, geser `--start` ke kata pertamanya. Topik debat yang bisa dijawab penonton memancing komentar jauh lebih banyak.
+3. **Rencana Timeline Aset** (detik relatif di dalam klip):
+   - Screenshot halaman asli saat tokoh/acara disebut; B-roll episode saat host bertanya; B-roll stok saat benda disebut; text slam tepat saat punchline diucapkan.
+   - Maksimal 1–2 B-roll + 1 mockup, masing-masing 1,5–3 detik; jangan menutupi wajah saat punchline; jangan masuk 3 detik terakhir.
+   - Style B: rencana overlay kata kunci (1 per 3–5 detik, foto untuk benda, emoji untuk emosi) dan rencana crop per shot, lihat `workflow/03_REMOTION_BRIDGE.md` §6.
+4. **Penyusunan Hook Headline** (Style A saja; Style B tidak memakai headline):
    - Tentukan teks headline ringkas (maksimal 6-8 kata, huruf kapital).
    - Contoh: `10M ARR DALAM 60 HARI`, `FAKTA DI BALIK KASUS VIRAL`, `JANGAN LAKUKAN KESALAHAN INI`.

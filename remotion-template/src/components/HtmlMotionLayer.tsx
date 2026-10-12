@@ -1,7 +1,10 @@
 import React from "react";
 import {
+  Easing,
+  Img,
   interpolate,
   spring,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
@@ -15,6 +18,10 @@ export type HtmlMotionItem = {
   headline?: string;
   subheadline?: string;
   sourceName?: string;
+  /** Real page capture from web_capture.py (public/ path, e.g. "screens/x.png"); replaces the fake article */
+  screenshot?: string;
+  /** Screenshot height / width, so the card can scroll through it */
+  screenshotAspect?: number;
   // Tweet props
   authorName?: string;
   authorHandle?: string;
@@ -29,6 +36,9 @@ export type HtmlMotionItem = {
   notifMessage?: string;
 };
 
+// Visible page area under the URL bar: keeps the card between the headline banner and the subtitles
+const SCREENSHOT_VIEW_HEIGHT = 560;
+
 export const HtmlMotionLayer: React.FC<{
   items?: HtmlMotionItem[];
 }> = ({ items = [] }) => {
@@ -36,7 +46,7 @@ export const HtmlMotionLayer: React.FC<{
   const { fps } = useVideoConfig();
 
   const activeItem = items.find(
-    (item) => frame >= item.startFrame && frame <= item.endFrame
+    (item) => frame >= item.startFrame && frame <= item.endFrame,
   );
 
   if (!activeItem) return null;
@@ -52,15 +62,46 @@ export const HtmlMotionLayer: React.FC<{
   });
 
   const scale = interpolate(popSpring, [0, 1], [0.8, 1]);
-  const enterOpacity = interpolate(age, [0, 5], [0, 1], { extrapolateRight: "clamp" });
-  const exitOpacity = interpolate(remaining, [0, 6], [0, 1], { extrapolateLeft: "clamp" });
+  const enterOpacity = interpolate(age, [0, 5], [0, 1], {
+    extrapolateRight: "clamp",
+  });
+  const exitOpacity = interpolate(remaining, [0, 6], [0, 1], {
+    extrapolateLeft: "clamp",
+  });
   const opacity = Math.min(enterOpacity, exitOpacity);
 
   // 1. BROWSER MOCKUP (Safari / Chrome News Headline)
   if (activeItem.type === "browser") {
-    const url = activeItem.url || "https://reuters.com/investigates/clancy-trial";
+    const url =
+      activeItem.url || "https://reuters.com/investigates/clancy-trial";
     const typedChars = Math.min(url.length, Math.floor(age * 1.5));
     const currentUrl = url.slice(0, typedChars);
+
+    // Screenshot scroll: hold the top of the page (title) for the first 40% so it can be read,
+    // then glide down at most ~6px per frame so short placements don't whip past the content
+    const itemDuration = activeItem.endFrame - activeItem.startFrame;
+    const scrollStart = Math.max(18, Math.round(itemDuration * 0.4));
+    const scrollEnd = Math.max(scrollStart + 1, itemDuration - 8);
+    const screenshotScroll = interpolate(
+      age,
+      [scrollStart, scrollEnd],
+      [
+        0,
+        Math.min(
+          Math.max(
+            0,
+            840 * (activeItem.screenshotAspect ?? 0) - SCREENSHOT_VIEW_HEIGHT,
+          ),
+          SCREENSHOT_VIEW_HEIGHT * 0.9,
+          (scrollEnd - scrollStart) * 6,
+        ),
+      ],
+      {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+        easing: Easing.inOut(Easing.cubic),
+      },
+    );
 
     return (
       <div
@@ -93,9 +134,30 @@ export const HtmlMotionLayer: React.FC<{
         >
           {/* Window control dots */}
           <div style={{ display: "flex", gap: 8 }}>
-            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#EF4444" }} />
-            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#F59E0B" }} />
-            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#10B981" }} />
+            <div
+              style={{
+                width: 14,
+                height: 14,
+                borderRadius: "50%",
+                backgroundColor: "#EF4444",
+              }}
+            />
+            <div
+              style={{
+                width: 14,
+                height: 14,
+                borderRadius: "50%",
+                backgroundColor: "#F59E0B",
+              }}
+            />
+            <div
+              style={{
+                width: 14,
+                height: 14,
+                borderRadius: "50%",
+                backgroundColor: "#10B981",
+              }}
+            />
           </div>
 
           {/* URL Pill Bar */}
@@ -120,48 +182,72 @@ export const HtmlMotionLayer: React.FC<{
           </div>
         </div>
 
-        {/* Web Article Content */}
-        <div style={{ padding: "32px 36px", backgroundColor: "#09090B" }}>
-          {activeItem.sourceName && (
-            <div
-              style={{
-                color: "#3B82F6",
-                fontSize: 15,
-                fontWeight: 900,
-                letterSpacing: "1.5px",
-                textTransform: "uppercase",
-                marginBottom: 10,
-              }}
-            >
-              📰 {activeItem.sourceName}
-            </div>
-          )}
-          <h2
+        {/* Real page screenshot: slow scroll through the capture after a short read pause */}
+        {activeItem.screenshot ? (
+          <div
             style={{
-              color: "#FFFFFF",
-              fontSize: 34,
-              fontWeight: 900,
-              lineHeight: 1.25,
-              margin: 0,
-              marginBottom: 14,
+              height: SCREENSHOT_VIEW_HEIGHT,
+              overflow: "hidden",
+              backgroundColor: "#09090B",
             }}
           >
-            {activeItem.headline || "Breaking: Shocking Public Debate Surrounding Viral Trial"}
-          </h2>
-          {activeItem.subheadline && (
-            <p
+            <Img
+              src={staticFile(
+                activeItem.screenshot
+                  .replace(/\\/g, "/")
+                  .replace(/^.*public\//, ""),
+              )}
               style={{
-                color: "#D4D4D8",
-                fontSize: 20,
-                lineHeight: 1.45,
+                width: "100%",
+                display: "block",
+                transform: `translateY(${-screenshotScroll}px)`,
+              }}
+            />
+          </div>
+        ) : (
+          <div style={{ padding: "32px 36px", backgroundColor: "#09090B" }}>
+            {activeItem.sourceName && (
+              <div
+                style={{
+                  color: "#3B82F6",
+                  fontSize: 15,
+                  fontWeight: 900,
+                  letterSpacing: "1.5px",
+                  textTransform: "uppercase",
+                  marginBottom: 10,
+                }}
+              >
+                📰 {activeItem.sourceName}
+              </div>
+            )}
+            <h2
+              style={{
+                color: "#FFFFFF",
+                fontSize: 34,
+                fontWeight: 900,
+                lineHeight: 1.25,
                 margin: 0,
-                fontWeight: 500,
+                marginBottom: 14,
               }}
             >
-              {activeItem.subheadline}
-            </p>
-          )}
-        </div>
+              {activeItem.headline ||
+                "Breaking: Shocking Public Debate Surrounding Viral Trial"}
+            </h2>
+            {activeItem.subheadline && (
+              <p
+                style={{
+                  color: "#D4D4D8",
+                  fontSize: 20,
+                  lineHeight: 1.45,
+                  margin: 0,
+                  fontWeight: 500,
+                }}
+              >
+                {activeItem.subheadline}
+              </p>
+            )}
+          </div>
+        )}
       </div>
     );
   }
@@ -181,12 +267,20 @@ export const HtmlMotionLayer: React.FC<{
           backgroundColor: "#000000",
           borderRadius: 24,
           border: "2px solid #2F3336",
-          boxShadow: "0 25px 65px rgba(0,0,0,0.9), 0 0 30px rgba(29, 155, 240, 0.2)",
+          boxShadow:
+            "0 25px 65px rgba(0,0,0,0.9), 0 0 30px rgba(29, 155, 240, 0.2)",
           padding: "28px 32px",
         }}
       >
         {/* Tweet Header */}
-        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 18 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 14,
+            marginBottom: 18,
+          }}
+        >
           <div
             style={{
               width: 54,
@@ -226,7 +320,8 @@ export const HtmlMotionLayer: React.FC<{
             marginBottom: 20,
           }}
         >
-          {activeItem.tweetText || "I can't believe what is trending on my timeline right now."}
+          {activeItem.tweetText ||
+            "I can't believe what is trending on my timeline right now."}
         </div>
 
         {/* Tweet Footer Stats */}
@@ -267,7 +362,8 @@ export const HtmlMotionLayer: React.FC<{
           backgroundColor: "#202124",
           borderRadius: 32,
           border: "2px solid rgba(255, 255, 255, 0.2)",
-          boxShadow: "0 25px 60px rgba(0,0,0,0.9), 0 0 40px rgba(66, 133, 244, 0.25)",
+          boxShadow:
+            "0 25px 60px rgba(0,0,0,0.9), 0 0 40px rgba(66, 133, 244, 0.25)",
           padding: "20px 32px",
           display: "flex",
           alignItems: "center",
@@ -328,9 +424,24 @@ export const HtmlMotionLayer: React.FC<{
       >
         💬
       </div>
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 3 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <span style={{ color: "#94A3B8", fontSize: 14, fontWeight: 700, textTransform: "uppercase" }}>
+      <div
+        style={{ flex: 1, display: "flex", flexDirection: "column", gap: 3 }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <span
+            style={{
+              color: "#94A3B8",
+              fontSize: 14,
+              fontWeight: 700,
+              textTransform: "uppercase",
+            }}
+          >
             {activeItem.appName || "NEWS ALERT"}
           </span>
           <span style={{ color: "#64748B", fontSize: 13 }}>now</span>
@@ -339,7 +450,8 @@ export const HtmlMotionLayer: React.FC<{
           {activeItem.notifTitle || "Trending Topic Update"}
         </span>
         <span style={{ color: "#CBD5E1", fontSize: 16, fontWeight: 500 }}>
-          {activeItem.notifMessage || "Online discussion reaches 2.4 million impressions."}
+          {activeItem.notifMessage ||
+            "Online discussion reaches 2.4 million impressions."}
         </span>
       </div>
     </div>

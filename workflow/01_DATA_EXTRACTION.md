@@ -3,9 +3,9 @@
 ## 1. Tujuan Tahapan
 
 Mengekstrak data primer dari video YouTube target:
-1. Kurva retensi penonton (Most Replayed Heatmap) melalui YouTube API.
-2. File audio dan video menggunakan `yt-dlp` dan `ffmpeg`.
-3. Transkrip per kata (word-level timestamps) menggunakan `faster-whisper`.
+1. Kurva retensi penonton (Most Replayed Heatmap).
+2. Video master `source.mp4` (H.264 + AAC) menggunakan `yt-dlp` dan `ffmpeg`.
+3. Transkrip per kata (word-level timestamps): caption YouTube (json3) atau `faster-whisper`.
 
 ---
 
@@ -23,41 +23,66 @@ Pastikan dependensi berikut terpasang:
 
 ## 3. Perintah Ekstraksi
 
-Jalankan script `run.py` dengan memberikan URL atau video ID YouTube:
+### A. Podcast / Interview Multi-Pembicara (disarankan untuk podcast)
+Caption otomatis YouTube pada percakapan dua orang sering **mengacak urutan kata** (contoh: "Could from The Big Bang Theory because he's nice Leonard"), sehingga subtitle salah dan klip berisiko ditolak sebagai low-effort. Gunakan Whisper:
 
 ```bash
-python hook-radar/scripts/run.py "https://www.youtube.com/watch?v=W8E6f5F7_aE"
+python hook-radar/scripts/run.py "<YOUTUBE_URL>" --min 20 --max 45 --top 6 --download-video --transcript whisper --whisper-model small --language en --force
 ```
 
-Opsi argumen:
-- `--keep-source`: Mengunduh dan mempertahankan file video master `source.mp4`.
-- `--whisper-model`: Pilihan model Whisper (default: `base`, opsi lain: `small`, `medium`, `large-v3`).
-- `--device`: `cuda` (akselerasi GPU NVIDIA) atau `cpu`.
+Untuk **Style B (Fullbleed Speaker)** ganti rentang durasi menjadi `--min 45 --max 90`. Video sumber wajib 1080p (default `--max-height 1080`), karena crop 9:16 di-upscale ±1,78×.
 
-Contoh eksekusi lengkap dengan GPU:
+### B. Video Satu Pembicara dengan Caption Rapi
 ```bash
-python hook-radar/scripts/run.py "https://www.youtube.com/watch?v=W8E6f5F7_aE" --keep-source --device cuda
+python hook-radar/scripts/run.py "<YOUTUBE_URL>" --min 20 --max 45 --top 5 --download-video
 ```
+
+### Opsi Argumen
+| Argumen | Default | Fungsi |
+| :--- | :---: | :--- |
+| `--download-video` | off | Unduh `source.mp4` (H.264 + AAC, ≤ `--max-height`). Wajib untuk Whisper dan rendering. |
+| `--max-height` | 1080 | Resolusi maksimum video yang diunduh. |
+| `--transcript` | `auto` | `auto` (caption bila ada, lalu Whisper), `captions`, atau `whisper`. |
+| `--whisper-model` | `small` | `tiny`, `base`, `small`, `medium`, `large-v3`. |
+| `--whisper-device` | `auto` | `cpu`, `cuda`, atau `auto`. |
+| `--language` | `auto` | Kode bahasa caption/Whisper (mis. `en`). |
+| `--min` / `--max` | 15 / 45 | Rentang durasi kandidat (detik). Fase 1.000 views: 20–45. |
+| `--top` | 10 | Jumlah kandidat yang disimpan. |
+| `--force` | off | Abaikan cache: ambil ulang metadata **dan ulangi transkrip**. |
+
+Whisper `small` di CPU butuh ±2–3 menit untuk video 13 menit.
 
 ---
 
 ## 4. Struktur Direktori Output
 
-Hasil ekstraksi disimpan di folder `runs/<video_id>/`:
+Hasil ekstraksi disimpan di `hook-radar/workspace/runs/<video_id>/`:
 
 ```
-runs/W8E6f5F7_aE/
-├── candidates.json       # Daftar segmen kandidat hasil kalkulasi algoritma
-├── words.json            # Transkrip dengan start dan end per kata (detik)
-├── heatmap.json          # Titik kurva Most Replayed dari YouTube
-├── transcript.txt        # Teks narasi lengkap
-├── metadata.json         # Judul, channel, durasi, view count
-└── source.mp4            # Video master original
+runs/<video_id>/
+├── candidates.json       # Kandidat segmen + skor + evidence
+├── words.json            # Transkrip per kata {start, end, text}: sumber kebenaran untuk potongan & subtitle
+├── phrases.json          # Transkrip per frasa
+├── sentences.json        # Transkrip per kalimat
+├── transcript_packed.md  # Tampilan baca: satu baris per frasa dengan [start-end]
+├── heatmap.json          # Puncak kurva Most Replayed + baseline
+├── report.md             # Ringkasan untuk manusia
+├── audio.wav             # (Whisper) audio hasil ekstraksi
+└── source.mp4            # (--download-video) video master
 ```
 
 ---
 
-## 5. Struktur Data candidates.json
+## 5. Verifikasi Transkrip (Wajib Sebelum Export)
+
+1. Baca `words.json` pada rentang klip yang dipilih.
+2. Bandingkan dengan caption YouTube: **Whisper benar urutannya, caption YouTube sering benar ejaannya** (nama, istilah).
+3. Koreksi kata yang salah dengar langsung di `words.json` (contoh nyata: `grievance` → `green beans`, `Mutters` → `mothers`).
+4. Catatan: menjalankan ulang dengan `--force` menghapus koreksi manual.
+
+---
+
+## 6. Struktur Data candidates.json
 
 Setiap segmen kandidat memuat metadata berikut:
 
@@ -67,19 +92,10 @@ Setiap segmen kandidat memuat metadata berikut:
   "start": 124.5,
   "end": 185.2,
   "duration": 60.7,
-  "start_hms": "00:02:04",
-  "end_hms": "00:03:05",
+  "start_hms": "2:04.50",
+  "end_hms": "3:05.20",
   "first_line": "This is where everything changed...",
-  "peak_score": 0.88,
-  "scores": {
-    "retention": 23.5,
-    "hook": 18.0,
-    "density": 17.5,
-    "emotion": 14.0,
-    "loop": 8.5,
-    "visual": 9.0,
-    "total": 90.5
-  }
+  "scores": {"hook": 52.0, "retention": 50.0, "fit": 99.9, "composite": 63.8}
 }
 ```
 

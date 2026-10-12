@@ -1,4 +1,4 @@
-# Spesifikasi Arsitektur: 10-Layer Motion Stack
+# Spesifikasi Arsitektur: 10-Layer Motion Stack + Audio Layer
 
 ## 1. Konsep Pemisahan Lapisan
 
@@ -13,6 +13,8 @@ Rendering video vertikal dibagi menjadi 10 lapisan visual terisolasi (*10-layer 
 ## 2. Struktur Lapisan dan Hierarki Z-Index
 
 ```
++------------------------------------------------------------------------+
+| (non-visual) Audio Layer - Auto-cued CC0 SFX (SfxLayer.tsx)            |
 +------------------------------------------------------------------------+
 | Z-Index 90: Layer 10 - Cine-Optics FX (Grain, Vignette, Chromatic)     |
 +------------------------------------------------------------------------+
@@ -50,6 +52,7 @@ Rendering video vertikal dibagi menjadi 10 lapisan visual terisolasi (*10-layer 
 * **Deskripsi**: Duplikasi stream video A-roll utama yang diskalakan mengisi seluruh kanvas (1080x1920) dengan filter:
   `filter: blur(40px) brightness(0.28) contrast(1.15);`
 * **Fungsi**: Mengisi ruang vertikal kosong di luar rasio 16:9 kartu video utama.
+* **Audio**: Di-`muted`. Dialog hanya berasal dari kartu A-roll (sebelumnya dialog terdengar dobel).
 
 ### Layer 03: Floating Ambient Bokeh Particles (`BodyAnimations.tsx`)
 * **Z-Index**: `20`
@@ -61,17 +64,20 @@ Rendering video vertikal dibagi menjadi 10 lapisan visual terisolasi (*10-layer 
 * **Deskripsi**: Kartu video utama dengan rasio 16:9 (lebar 860px, tinggi 484px), border 3px solid, radius sudut 24px, dan drop shadow pekat.
 * **Fitur**:
   - **Dynamic Punch-Zoom**: Perubahan skala halus (1.0x ke 1.05x) pada poin penting dialog.
-  - **Speaker Spotlight Badge**: Penanda nama dan peran pembicara di atas kartu video.
+  - **Speaker Spotlight Badge**: Penanda nama dan peran pembicara. Posisi default `bottom-left` = `top: 1190px, left: 110px` (celah antara kartu video dan pita subtitle, tidak menutupi subtitle); `top-left` = `top: 615px`.
 
 ### Layer 05: B-Roll Cutaways (`BRollLayer.tsx`)
 * **Z-Index**: `40`
 * **Deskripsi**: Sisipan video atau gambar pendukung narasi dengan transisi spring.
-* **Fitur**: Animasi pan dan zoom (Ken Burns) dengan label sumber referensi.
+* **Fitur**: Animasi pan dan zoom (Ken Burns), caption di kiri bawah dan kredit sumber/lisensi di kanan bawah. **Tanpa badge label** (badge "B-ROLL ARCHIVE" dihapus karena mengganggu).
+* **Sumber**: footage episode (`--broll-from`) atau stok berlisensi (`--broll-asset`). Lihat `03_ASSET_PIPELINE.md`.
+* **Teknis**: Video di-`muted` dan dibungkus `<Sequence from={startFrame}>` agar selalu diputar dari awal file.
 
 ### Layer 06: HTML Mockups (`HtmlMotionLayer.tsx`)
 * **Z-Index**: `50`
 * **Deskripsi**: Render komponen UI web berupa browser window, tweet feed, atau search query.
 * **Fungsi**: Menampilkan materi pembuktian kontekstual yang dibahas dalam dialog.
+* **Screenshot asli**: Mockup `browser` dapat memuat screenshot halaman nyata (`screenshot`, `screenshotAspect`) dari `web_capture.py`; area tampil 560px, menahan judul 40% durasi pertama lalu scroll halus.
 
 ### Layer 07: Stickers, Stat Counters, dan Attention Badges (`HookAnimations.tsx`)
 * **Z-Index**: `60`
@@ -100,3 +106,9 @@ Rendering video vertikal dibagi menjadi 10 lapisan visual terisolasi (*10-layer 
   - **Chromatic Aberration Pulse**: Pemisahan kanal warna pada transisi aksen.
   - **Anamorphic Light Leak**: Efek pencahayaan pada transisi pembuka.
   - **Film Grain Overlay**: Tekstur film noise halus untuk menyatukan elemen visual grafis dan video.
+
+### Audio Layer: Auto-Cued SFX (`SfxLayer.tsx`)
+* **Z-Index**: tidak relevan (non-visual).
+* **Deskripsi**: `<Audio>` dari `@remotion/media` dipasang otomatis pada event timeline: hook (impact), text slam (hit/glitch), B-roll & mockup masuk (whoosh), sticker/stat (pop), outro CTA (ding).
+* **Parameter**: `sfx.masterVolume` (default 0,35), `sfx.minGapFrames` (default 8), `sfx.cues` untuk cue manual, `sfx.enabled`/`--no-sfx` untuk mematikan.
+* **Library**: `public/sfx/` + `src/sfx-library.json`, diisi oleh `hook-radar/scripts/sfx_fetch.py` (CC0, tanpa API key).

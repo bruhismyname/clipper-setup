@@ -20,11 +20,12 @@ export const TalkingHeadBadge: React.FC<{
   const glowColor = config.glowColor || "#FFE600";
   const position = config.position || "bottom-left";
 
+  // "bottom" sits in the gap between the video card (ends ~Y 1150) and the subtitle band (Y 1350-1450)
   const posStyle: React.CSSProperties =
     position === "bottom-left"
-      ? { bottom: 480, left: 110 }
+      ? { top: 1190, left: 110 }
       : position === "bottom-right"
-      ? { bottom: 480, right: 110 }
+      ? { top: 1190, right: 110 }
       : position === "top-left"
       ? { top: 615, left: 110 }
       : { top: 615, right: 110 };

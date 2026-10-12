@@ -1,0 +1,1897 @@
+{
+  "style": "fullbleed",
+  "candidateId": "b01",
+  "videoSrc": "b01-clip.mp4",
+  "sourceWidth": 1920,
+  "sourceHeight": 1080,
+  "durationInSeconds": 50.35,
+  "durationInFrames": 1510,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "start": 299.05,
+  "end": 349.4,
+  "startHms": "4:59.05",
+  "endHms": "5:49.40",
+  "captions": [
+    {
+      "text": "You",
+      "start": 0.05,
+      "end": 0.67,
+      "startMs": 50,
+      "endMs": 670,
+      "startFrame": 2,
+      "endFrame": 20
+    },
+    {
+      "text": "like",
+      "start": 0.67,
+      "end": 0.83,
+      "startMs": 670,
+      "endMs": 830,
+      "startFrame": 20,
+      "endFrame": 25
+    },
+    {
+      "text": "pretzels?",
+      "start": 0.83,
+      "end": 1.17,
+      "startMs": 830,
+      "endMs": 1170,
+      "startFrame": 25,
+      "endFrame": 35
+    },
+    {
+      "text": "Pretzels,",
+      "start": 1.81,
+      "end": 2.21,
+      "startMs": 1810,
+      "endMs": 2210,
+      "startFrame": 54,
+      "endFrame": 66
+    },
+    {
+      "text": "yes,",
+      "start": 2.31,
+      "end": 2.59,
+      "startMs": 2310,
+      "endMs": 2590,
+      "startFrame": 69,
+      "endFrame": 78
+    },
+    {
+      "text": "but",
+      "start": 2.83,
+      "end": 2.99,
+      "startMs": 2830,
+      "endMs": 2990,
+      "startFrame": 85,
+      "endFrame": 90
+    },
+    {
+      "text": "technically,",
+      "start": 2.99,
+      "end": 3.59,
+      "startMs": 2990,
+      "endMs": 3590,
+      "startFrame": 90,
+      "endFrame": 108
+    },
+    {
+      "text": "yes.",
+      "start": 3.83,
+      "end": 4.19,
+      "startMs": 3830,
+      "endMs": 4190,
+      "startFrame": 115,
+      "endFrame": 126
+    },
+    {
+      "text": "I",
+      "start": 4.83,
+      "end": 4.97,
+      "startMs": 4830,
+      "endMs": 4970,
+      "startFrame": 145,
+      "endFrame": 149
+    },
+    {
+      "text": "like",
+      "start": 4.97,
+      "end": 5.13,
+      "startMs": 4970,
+      "endMs": 5130,
+      "startFrame": 149,
+      "endFrame": 154
+    },
+    {
+      "text": "the",
+      "start": 5.13,
+      "end": 5.31,
+      "startMs": 5130,
+      "endMs": 5310,
+      "startFrame": 154,
+      "endFrame": 159
+    },
+    {
+      "text": "pretzel",
+      "start": 5.31,
+      "end": 5.75,
+      "startMs": 5310,
+      "endMs": 5750,
+      "startFrame": 159,
+      "endFrame": 172
+    },
+    {
+      "text": "with",
+      "start": 5.75,
+      "end": 5.91,
+      "startMs": 5750,
+      "endMs": 5910,
+      "startFrame": 172,
+      "endFrame": 177
+    },
+    {
+      "text": "the",
+      "start": 5.91,
+      "end": 6.03,
+      "startMs": 5910,
+      "endMs": 6030,
+      "startFrame": 177,
+      "endFrame": 181
+    },
+    {
+      "text": "hot",
+      "start": 6.03,
+      "end": 6.17,
+      "startMs": 6030,
+      "endMs": 6170,
+      "startFrame": 181,
+      "endFrame": 185
+    },
+    {
+      "text": "dog",
+      "start": 6.17,
+      "end": 6.41,
+      "startMs": 6170,
+      "endMs": 6410,
+      "startFrame": 185,
+      "endFrame": 192
+    },
+    {
+      "text": "in",
+      "start": 6.41,
+      "end": 6.57,
+      "startMs": 6410,
+      "endMs": 6570,
+      "startFrame": 192,
+      "endFrame": 197
+    },
+    {
+      "text": "it.",
+      "start": 6.57,
+      "end": 6.71,
+      "startMs": 6570,
+      "endMs": 6710,
+      "startFrame": 197,
+      "endFrame": 201
+    },
+    {
+      "text": "Yeah,",
+      "start": 6.91,
+      "end": 7.09,
+      "startMs": 6910,
+      "endMs": 7090,
+      "startFrame": 207,
+      "endFrame": 213
+    },
+    {
+      "text": "I",
+      "start": 7.11,
+      "end": 7.21,
+      "startMs": 7110,
+      "endMs": 7210,
+      "startFrame": 213,
+      "endFrame": 216
+    },
+    {
+      "text": "don't",
+      "start": 7.21,
+      "end": 7.35,
+      "startMs": 7210,
+      "endMs": 7350,
+      "startFrame": 216,
+      "endFrame": 220
+    },
+    {
+      "text": "get",
+      "start": 7.35,
+      "end": 7.55,
+      "startMs": 7350,
+      "endMs": 7550,
+      "startFrame": 220,
+      "endFrame": 226
+    },
+    {
+      "text": "it.",
+      "start": 7.55,
+      "end": 7.69,
+      "startMs": 7550,
+      "endMs": 7690,
+      "startFrame": 226,
+      "endFrame": 231
+    },
+    {
+      "text": "Why",
+      "start": 7.71,
+      "end": 7.83,
+      "startMs": 7710,
+      "endMs": 7830,
+      "startFrame": 231,
+      "endFrame": 235
+    },
+    {
+      "text": "do",
+      "start": 7.83,
+      "end": 7.97,
+      "startMs": 7830,
+      "endMs": 7970,
+      "startFrame": 235,
+      "endFrame": 239
+    },
+    {
+      "text": "you",
+      "start": 7.97,
+      "end": 8.09,
+      "startMs": 7970,
+      "endMs": 8090,
+      "startFrame": 239,
+      "endFrame": 243
+    },
+    {
+      "text": "put",
+      "start": 8.09,
+      "end": 8.29,
+      "startMs": 8090,
+      "endMs": 8290,
+      "startFrame": 243,
+      "endFrame": 249
+    },
+    {
+      "text": "pretzels",
+      "start": 8.29,
+      "end": 8.65,
+      "startMs": 8290,
+      "endMs": 8650,
+      "startFrame": 249,
+      "endFrame": 260
+    },
+    {
+      "text": "on",
+      "start": 8.65,
+      "end": 8.77,
+      "startMs": 8650,
+      "endMs": 8770,
+      "startFrame": 260,
+      "endFrame": 263
+    },
+    {
+      "text": "a",
+      "start": 8.77,
+      "end": 8.87,
+      "startMs": 8770,
+      "endMs": 8870,
+      "startFrame": 263,
+      "endFrame": 266
+    },
+    {
+      "text": "hot",
+      "start": 8.87,
+      "end": 9.13,
+      "startMs": 8870,
+      "endMs": 9130,
+      "startFrame": 266,
+      "endFrame": 274
+    },
+    {
+      "text": "dog?",
+      "start": 9.13,
+      "end": 9.37,
+      "startMs": 9130,
+      "endMs": 9370,
+      "startFrame": 274,
+      "endFrame": 281
+    },
+    {
+      "text": "Those",
+      "start": 9.53,
+      "end": 9.65,
+      "startMs": 9530,
+      "endMs": 9650,
+      "startFrame": 286,
+      "endFrame": 290
+    },
+    {
+      "text": "people",
+      "start": 9.65,
+      "end": 9.95,
+      "startMs": 9650,
+      "endMs": 9950,
+      "startFrame": 290,
+      "endFrame": 298
+    },
+    {
+      "text": "should",
+      "start": 9.95,
+      "end": 10.17,
+      "startMs": 9950,
+      "endMs": 10170,
+      "startFrame": 298,
+      "endFrame": 305
+    },
+    {
+      "text": "understand",
+      "start": 10.17,
+      "end": 10.73,
+      "startMs": 10170,
+      "endMs": 10730,
+      "startFrame": 305,
+      "endFrame": 322
+    },
+    {
+      "text": "these",
+      "start": 10.73,
+      "end": 11.03,
+      "startMs": 10730,
+      "endMs": 11030,
+      "startFrame": 322,
+      "endFrame": 331
+    },
+    {
+      "text": "things.",
+      "start": 11.03,
+      "end": 11.35,
+      "startMs": 11030,
+      "endMs": 11350,
+      "startFrame": 331,
+      "endFrame": 340
+    },
+    {
+      "text": "I",
+      "start": 11.85,
+      "end": 12.03,
+      "startMs": 11850,
+      "endMs": 12030,
+      "startFrame": 356,
+      "endFrame": 361
+    },
+    {
+      "text": "like",
+      "start": 12.03,
+      "end": 12.27,
+      "startMs": 12030,
+      "endMs": 12270,
+      "startFrame": 361,
+      "endFrame": 368
+    },
+    {
+      "text": "it.",
+      "start": 12.27,
+      "end": 12.47,
+      "startMs": 12270,
+      "endMs": 12470,
+      "startFrame": 368,
+      "endFrame": 374
+    },
+    {
+      "text": "But",
+      "start": 12.85,
+      "end": 12.99,
+      "startMs": 12850,
+      "endMs": 12990,
+      "startFrame": 386,
+      "endFrame": 390
+    },
+    {
+      "text": "if",
+      "start": 12.99,
+      "end": 13.23,
+      "startMs": 12990,
+      "endMs": 13230,
+      "startFrame": 390,
+      "endFrame": 397
+    },
+    {
+      "text": "you",
+      "start": 13.23,
+      "end": 13.37,
+      "startMs": 13230,
+      "endMs": 13370,
+      "startFrame": 397,
+      "endFrame": 401
+    },
+    {
+      "text": "like",
+      "start": 13.37,
+      "end": 13.63,
+      "startMs": 13370,
+      "endMs": 13630,
+      "startFrame": 401,
+      "endFrame": 409
+    },
+    {
+      "text": "it,",
+      "start": 13.63,
+      "end": 13.81,
+      "startMs": 13630,
+      "endMs": 13810,
+      "startFrame": 409,
+      "endFrame": 414
+    },
+    {
+      "text": "why?",
+      "start": 13.97,
+      "end": 14.19,
+      "startMs": 13970,
+      "endMs": 14190,
+      "startFrame": 419,
+      "endFrame": 426
+    },
+    {
+      "text": "I",
+      "start": 14.35,
+      "end": 14.49,
+      "startMs": 14350,
+      "endMs": 14490,
+      "startFrame": 430,
+      "endFrame": 435
+    },
+    {
+      "text": "don't",
+      "start": 14.49,
+      "end": 14.73,
+      "startMs": 14490,
+      "endMs": 14730,
+      "startFrame": 435,
+      "endFrame": 442
+    },
+    {
+      "text": "like",
+      "start": 14.73,
+      "end": 14.97,
+      "startMs": 14730,
+      "endMs": 14970,
+      "startFrame": 442,
+      "endFrame": 449
+    },
+    {
+      "text": "it",
+      "start": 14.97,
+      "end": 15.19,
+      "startMs": 14970,
+      "endMs": 15190,
+      "startFrame": 449,
+      "endFrame": 456
+    },
+    {
+      "text": "because",
+      "start": 15.19,
+      "end": 15.53,
+      "startMs": 15190,
+      "endMs": 15530,
+      "startFrame": 456,
+      "endFrame": 466
+    },
+    {
+      "text": "it's",
+      "start": 15.53,
+      "end": 16.31,
+      "startMs": 15530,
+      "endMs": 16309,
+      "startFrame": 466,
+      "endFrame": 489
+    },
+    {
+      "text": "like",
+      "start": 16.31,
+      "end": 16.47,
+      "startMs": 16309,
+      "endMs": 16470,
+      "startFrame": 489,
+      "endFrame": 494
+    },
+    {
+      "text": "when",
+      "start": 16.47,
+      "end": 16.61,
+      "startMs": 16470,
+      "endMs": 16610,
+      "startFrame": 494,
+      "endFrame": 498
+    },
+    {
+      "text": "you",
+      "start": 16.61,
+      "end": 16.79,
+      "startMs": 16610,
+      "endMs": 16790,
+      "startFrame": 498,
+      "endFrame": 504
+    },
+    {
+      "text": "go",
+      "start": 16.79,
+      "end": 17.21,
+      "startMs": 16790,
+      "endMs": 17210,
+      "startFrame": 504,
+      "endFrame": 516
+    },
+    {
+      "text": "to",
+      "start": 17.21,
+      "end": 17.39,
+      "startMs": 17210,
+      "endMs": 17390,
+      "startFrame": 516,
+      "endFrame": 522
+    },
+    {
+      "text": "a",
+      "start": 17.39,
+      "end": 17.53,
+      "startMs": 17390,
+      "endMs": 17530,
+      "startFrame": 522,
+      "endFrame": 526
+    },
+    {
+      "text": "baseball",
+      "start": 17.53,
+      "end": 17.87,
+      "startMs": 17530,
+      "endMs": 17870,
+      "startFrame": 526,
+      "endFrame": 536
+    },
+    {
+      "text": "game,",
+      "start": 17.87,
+      "end": 18.27,
+      "startMs": 17870,
+      "endMs": 18270,
+      "startFrame": 536,
+      "endFrame": 548
+    },
+    {
+      "text": "like",
+      "start": 18.59,
+      "end": 18.64,
+      "startMs": 18590,
+      "endMs": 18640,
+      "startFrame": 558,
+      "endFrame": 559
+    },
+    {
+      "text": "I",
+      "start": 18.59,
+      "end": 18.97,
+      "startMs": 18590,
+      "endMs": 18970,
+      "startFrame": 558,
+      "endFrame": 569
+    },
+    {
+      "text": "want",
+      "start": 18.97,
+      "end": 19.19,
+      "startMs": 18970,
+      "endMs": 19190,
+      "startFrame": 569,
+      "endFrame": 576
+    },
+    {
+      "text": "a",
+      "start": 19.19,
+      "end": 19.33,
+      "startMs": 19190,
+      "endMs": 19330,
+      "startFrame": 576,
+      "endFrame": 580
+    },
+    {
+      "text": "pretzel",
+      "start": 19.33,
+      "end": 19.63,
+      "startMs": 19330,
+      "endMs": 19630,
+      "startFrame": 580,
+      "endFrame": 589
+    },
+    {
+      "text": "dog,",
+      "start": 19.63,
+      "end": 19.89,
+      "startMs": 19630,
+      "endMs": 19890,
+      "startFrame": 589,
+      "endFrame": 597
+    },
+    {
+      "text": "it's",
+      "start": 19.99,
+      "end": 20.05,
+      "startMs": 19990,
+      "endMs": 20050,
+      "startFrame": 600,
+      "endFrame": 602
+    },
+    {
+      "text": "like,",
+      "start": 20.05,
+      "end": 20.19,
+      "startMs": 20050,
+      "endMs": 20190,
+      "startFrame": 602,
+      "endFrame": 606
+    },
+    {
+      "text": "hey,",
+      "start": 20.49,
+      "end": 20.59,
+      "startMs": 20490,
+      "endMs": 20590,
+      "startFrame": 615,
+      "endFrame": 618
+    },
+    {
+      "text": "we",
+      "start": 20.63,
+      "end": 20.75,
+      "startMs": 20630,
+      "endMs": 20750,
+      "startFrame": 619,
+      "endFrame": 622
+    },
+    {
+      "text": "don't",
+      "start": 20.75,
+      "end": 20.89,
+      "startMs": 20750,
+      "endMs": 20890,
+      "startFrame": 622,
+      "endFrame": 627
+    },
+    {
+      "text": "sell",
+      "start": 20.89,
+      "end": 21.15,
+      "startMs": 20890,
+      "endMs": 21150,
+      "startFrame": 627,
+      "endFrame": 634
+    },
+    {
+      "text": "that",
+      "start": 21.15,
+      "end": 21.35,
+      "startMs": 21150,
+      "endMs": 21350,
+      "startFrame": 634,
+      "endFrame": 640
+    },
+    {
+      "text": "stuff,",
+      "start": 21.35,
+      "end": 21.65,
+      "startMs": 21350,
+      "endMs": 21650,
+      "startFrame": 640,
+      "endFrame": 650
+    },
+    {
+      "text": "sir.",
+      "start": 21.67,
+      "end": 21.95,
+      "startMs": 21670,
+      "endMs": 21950,
+      "startFrame": 650,
+      "endFrame": 658
+    },
+    {
+      "text": "What",
+      "start": 22.39,
+      "end": 22.67,
+      "startMs": 22390,
+      "endMs": 22670,
+      "startFrame": 672,
+      "endFrame": 680
+    },
+    {
+      "text": "do",
+      "start": 22.67,
+      "end": 22.75,
+      "startMs": 22670,
+      "endMs": 22750,
+      "startFrame": 680,
+      "endFrame": 682
+    },
+    {
+      "text": "you",
+      "start": 22.75,
+      "end": 22.85,
+      "startMs": 22750,
+      "endMs": 22850,
+      "startFrame": 682,
+      "endFrame": 686
+    },
+    {
+      "text": "like",
+      "start": 22.85,
+      "end": 23.03,
+      "startMs": 22850,
+      "endMs": 23030,
+      "startFrame": 686,
+      "endFrame": 691
+    },
+    {
+      "text": "at",
+      "start": 23.03,
+      "end": 23.15,
+      "startMs": 23030,
+      "endMs": 23150,
+      "startFrame": 691,
+      "endFrame": 694
+    },
+    {
+      "text": "a",
+      "start": 23.15,
+      "end": 23.23,
+      "startMs": 23150,
+      "endMs": 23230,
+      "startFrame": 694,
+      "endFrame": 697
+    },
+    {
+      "text": "baseball",
+      "start": 23.23,
+      "end": 23.49,
+      "startMs": 23230,
+      "endMs": 23490,
+      "startFrame": 697,
+      "endFrame": 705
+    },
+    {
+      "text": "game",
+      "start": 23.49,
+      "end": 23.83,
+      "startMs": 23490,
+      "endMs": 23830,
+      "startFrame": 705,
+      "endFrame": 715
+    },
+    {
+      "text": "if",
+      "start": 23.83,
+      "end": 24.01,
+      "startMs": 23830,
+      "endMs": 24010,
+      "startFrame": 715,
+      "endFrame": 720
+    },
+    {
+      "text": "you",
+      "start": 24.01,
+      "end": 24.13,
+      "startMs": 24010,
+      "endMs": 24130,
+      "startFrame": 720,
+      "endFrame": 724
+    },
+    {
+      "text": "go?",
+      "start": 24.13,
+      "end": 24.27,
+      "startMs": 24130,
+      "endMs": 24270,
+      "startFrame": 724,
+      "endFrame": 728
+    },
+    {
+      "text": "Oh,",
+      "start": 24.71,
+      "end": 25.01,
+      "startMs": 24710,
+      "endMs": 25010,
+      "startFrame": 741,
+      "endFrame": 750
+    },
+    {
+      "text": "for",
+      "start": 25.07,
+      "end": 25.31,
+      "startMs": 25070,
+      "endMs": 25310,
+      "startFrame": 752,
+      "endFrame": 759
+    },
+    {
+      "text": "me,",
+      "start": 25.31,
+      "end": 25.55,
+      "startMs": 25310,
+      "endMs": 25550,
+      "startFrame": 759,
+      "endFrame": 766
+    },
+    {
+      "text": "I'm",
+      "start": 25.67,
+      "end": 25.91,
+      "startMs": 25670,
+      "endMs": 25910,
+      "startFrame": 770,
+      "endFrame": 777
+    },
+    {
+      "text": "not",
+      "start": 25.91,
+      "end": 26.05,
+      "startMs": 25910,
+      "endMs": 26050,
+      "startFrame": 777,
+      "endFrame": 782
+    },
+    {
+      "text": "sure.",
+      "start": 26.05,
+      "end": 26.43,
+      "startMs": 26050,
+      "endMs": 26430,
+      "startFrame": 782,
+      "endFrame": 793
+    },
+    {
+      "text": "It's",
+      "start": 26.63,
+      "end": 26.68,
+      "startMs": 26630,
+      "endMs": 26680,
+      "startFrame": 799,
+      "endFrame": 800
+    },
+    {
+      "text": "like",
+      "start": 26.63,
+      "end": 26.85,
+      "startMs": 26630,
+      "endMs": 26850,
+      "startFrame": 799,
+      "endFrame": 806
+    },
+    {
+      "text": "a",
+      "start": 26.85,
+      "end": 27.01,
+      "startMs": 26850,
+      "endMs": 27010,
+      "startFrame": 806,
+      "endFrame": 810
+    },
+    {
+      "text": "person",
+      "start": 27.01,
+      "end": 27.25,
+      "startMs": 27010,
+      "endMs": 27250,
+      "startFrame": 810,
+      "endFrame": 818
+    },
+    {
+      "text": "like",
+      "start": 27.25,
+      "end": 27.53,
+      "startMs": 27250,
+      "endMs": 27530,
+      "startFrame": 818,
+      "endFrame": 826
+    },
+    {
+      "text": "at",
+      "start": 27.53,
+      "end": 27.67,
+      "startMs": 27530,
+      "endMs": 27670,
+      "startFrame": 826,
+      "endFrame": 830
+    },
+    {
+      "text": "water,",
+      "start": 27.67,
+      "end": 28.03,
+      "startMs": 27670,
+      "endMs": 28030,
+      "startFrame": 830,
+      "endFrame": 841
+    },
+    {
+      "text": "and",
+      "start": 28.05,
+      "end": 28.35,
+      "startMs": 28050,
+      "endMs": 28350,
+      "startFrame": 842,
+      "endFrame": 850
+    },
+    {
+      "text": "that's",
+      "start": 28.35,
+      "end": 28.65,
+      "startMs": 28350,
+      "endMs": 28650,
+      "startFrame": 850,
+      "endFrame": 860
+    },
+    {
+      "text": "all",
+      "start": 28.65,
+      "end": 28.85,
+      "startMs": 28650,
+      "endMs": 28850,
+      "startFrame": 860,
+      "endFrame": 866
+    },
+    {
+      "text": "it.",
+      "start": 28.85,
+      "end": 29.01,
+      "startMs": 28850,
+      "endMs": 29010,
+      "startFrame": 866,
+      "endFrame": 870
+    },
+    {
+      "text": "So",
+      "start": 29.01,
+      "end": 29.73,
+      "startMs": 29010,
+      "endMs": 29730,
+      "startFrame": 870,
+      "endFrame": 892
+    },
+    {
+      "text": "if",
+      "start": 29.73,
+      "end": 29.95,
+      "startMs": 29730,
+      "endMs": 29950,
+      "startFrame": 892,
+      "endFrame": 898
+    },
+    {
+      "text": "you",
+      "start": 29.95,
+      "end": 30.09,
+      "startMs": 29950,
+      "endMs": 30090,
+      "startFrame": 898,
+      "endFrame": 903
+    },
+    {
+      "text": "go",
+      "start": 30.09,
+      "end": 30.55,
+      "startMs": 30090,
+      "endMs": 30550,
+      "startFrame": 903,
+      "endFrame": 916
+    },
+    {
+      "text": "to",
+      "start": 30.55,
+      "end": 30.67,
+      "startMs": 30550,
+      "endMs": 30670,
+      "startFrame": 916,
+      "endFrame": 920
+    },
+    {
+      "text": "a",
+      "start": 30.67,
+      "end": 30.81,
+      "startMs": 30670,
+      "endMs": 30810,
+      "startFrame": 920,
+      "endFrame": 924
+    },
+    {
+      "text": "baseball",
+      "start": 30.81,
+      "end": 31.05,
+      "startMs": 30810,
+      "endMs": 31050,
+      "startFrame": 924,
+      "endFrame": 932
+    },
+    {
+      "text": "game,",
+      "start": 31.05,
+      "end": 31.35,
+      "startMs": 31050,
+      "endMs": 31350,
+      "startFrame": 932,
+      "endFrame": 940
+    },
+    {
+      "text": "what",
+      "start": 31.39,
+      "end": 31.49,
+      "startMs": 31390,
+      "endMs": 31490,
+      "startFrame": 942,
+      "endFrame": 945
+    },
+    {
+      "text": "do",
+      "start": 31.49,
+      "end": 31.57,
+      "startMs": 31490,
+      "endMs": 31570,
+      "startFrame": 945,
+      "endFrame": 947
+    },
+    {
+      "text": "you",
+      "start": 31.57,
+      "end": 31.63,
+      "startMs": 31570,
+      "endMs": 31630,
+      "startFrame": 947,
+      "endFrame": 949
+    },
+    {
+      "text": "get?",
+      "start": 31.63,
+      "end": 31.95,
+      "startMs": 31630,
+      "endMs": 31950,
+      "startFrame": 949,
+      "endFrame": 958
+    },
+    {
+      "text": "What",
+      "start": 32.47,
+      "end": 32.59,
+      "startMs": 32470,
+      "endMs": 32590,
+      "startFrame": 974,
+      "endFrame": 978
+    },
+    {
+      "text": "do",
+      "start": 32.59,
+      "end": 32.67,
+      "startMs": 32590,
+      "endMs": 32670,
+      "startFrame": 978,
+      "endFrame": 980
+    },
+    {
+      "text": "I",
+      "start": 32.67,
+      "end": 32.79,
+      "startMs": 32670,
+      "endMs": 32790,
+      "startFrame": 980,
+      "endFrame": 984
+    },
+    {
+      "text": "get?",
+      "start": 32.79,
+      "end": 32.97,
+      "startMs": 32790,
+      "endMs": 32970,
+      "startFrame": 984,
+      "endFrame": 989
+    },
+    {
+      "text": "Yeah.",
+      "start": 33.15,
+      "end": 33.29,
+      "startMs": 33150,
+      "endMs": 33290,
+      "startFrame": 994,
+      "endFrame": 999
+    },
+    {
+      "text": "I",
+      "start": 34.33,
+      "end": 34.73,
+      "startMs": 34330,
+      "endMs": 34730,
+      "startFrame": 1030,
+      "endFrame": 1042
+    },
+    {
+      "text": "probably",
+      "start": 34.73,
+      "end": 35.05,
+      "startMs": 34730,
+      "endMs": 35050,
+      "startFrame": 1042,
+      "endFrame": 1052
+    },
+    {
+      "text": "will",
+      "start": 35.05,
+      "end": 35.15,
+      "startMs": 35050,
+      "endMs": 35150,
+      "startFrame": 1052,
+      "endFrame": 1054
+    },
+    {
+      "text": "get",
+      "start": 35.15,
+      "end": 35.27,
+      "startMs": 35150,
+      "endMs": 35270,
+      "startFrame": 1054,
+      "endFrame": 1058
+    },
+    {
+      "text": "a",
+      "start": 35.27,
+      "end": 35.37,
+      "startMs": 35270,
+      "endMs": 35370,
+      "startFrame": 1058,
+      "endFrame": 1061
+    },
+    {
+      "text": "soda",
+      "start": 35.37,
+      "end": 35.57,
+      "startMs": 35370,
+      "endMs": 35570,
+      "startFrame": 1061,
+      "endFrame": 1067
+    },
+    {
+      "text": "pop,",
+      "start": 35.57,
+      "end": 35.89,
+      "startMs": 35570,
+      "endMs": 35890,
+      "startFrame": 1067,
+      "endFrame": 1077
+    },
+    {
+      "text": "and",
+      "start": 36.23,
+      "end": 36.41,
+      "startMs": 36230,
+      "endMs": 36410,
+      "startFrame": 1087,
+      "endFrame": 1092
+    },
+    {
+      "text": "I",
+      "start": 36.41,
+      "end": 36.53,
+      "startMs": 36410,
+      "endMs": 36530,
+      "startFrame": 1092,
+      "endFrame": 1096
+    },
+    {
+      "text": "get",
+      "start": 36.53,
+      "end": 36.81,
+      "startMs": 36530,
+      "endMs": 36810,
+      "startFrame": 1096,
+      "endFrame": 1104
+    },
+    {
+      "text": "hot",
+      "start": 36.81,
+      "end": 38.17,
+      "startMs": 36810,
+      "endMs": 38170,
+      "startFrame": 1104,
+      "endFrame": 1145
+    },
+    {
+      "text": "dog",
+      "start": 38.17,
+      "end": 38.41,
+      "startMs": 38170,
+      "endMs": 38410,
+      "startFrame": 1145,
+      "endFrame": 1152
+    },
+    {
+      "text": "again.",
+      "start": 38.41,
+      "end": 38.75,
+      "startMs": 38410,
+      "endMs": 38750,
+      "startFrame": 1152,
+      "endFrame": 1162
+    },
+    {
+      "text": "I",
+      "start": 39.13,
+      "end": 39.25,
+      "startMs": 39130,
+      "endMs": 39250,
+      "startFrame": 1174,
+      "endFrame": 1178
+    },
+    {
+      "text": "know",
+      "start": 39.25,
+      "end": 39.37,
+      "startMs": 39250,
+      "endMs": 39370,
+      "startFrame": 1178,
+      "endFrame": 1181
+    },
+    {
+      "text": "I",
+      "start": 39.37,
+      "end": 39.47,
+      "startMs": 39370,
+      "endMs": 39470,
+      "startFrame": 1181,
+      "endFrame": 1184
+    },
+    {
+      "text": "keep",
+      "start": 39.47,
+      "end": 39.63,
+      "startMs": 39470,
+      "endMs": 39630,
+      "startFrame": 1184,
+      "endFrame": 1189
+    },
+    {
+      "text": "getting",
+      "start": 39.63,
+      "end": 39.83,
+      "startMs": 39630,
+      "endMs": 39830,
+      "startFrame": 1189,
+      "endFrame": 1195
+    },
+    {
+      "text": "hot",
+      "start": 39.83,
+      "end": 40.11,
+      "startMs": 39830,
+      "endMs": 40110,
+      "startFrame": 1195,
+      "endFrame": 1203
+    },
+    {
+      "text": "dogs.",
+      "start": 40.11,
+      "end": 40.33,
+      "startMs": 40110,
+      "endMs": 40330,
+      "startFrame": 1203,
+      "endFrame": 1210
+    },
+    {
+      "text": "I",
+      "start": 40.41,
+      "end": 40.53,
+      "startMs": 40410,
+      "endMs": 40530,
+      "startFrame": 1212,
+      "endFrame": 1216
+    },
+    {
+      "text": "know",
+      "start": 40.53,
+      "end": 40.79,
+      "startMs": 40530,
+      "endMs": 40790,
+      "startFrame": 1216,
+      "endFrame": 1224
+    },
+    {
+      "text": "those",
+      "start": 40.79,
+      "end": 41.01,
+      "startMs": 40790,
+      "endMs": 41010,
+      "startFrame": 1224,
+      "endFrame": 1230
+    },
+    {
+      "text": "people",
+      "start": 41.01,
+      "end": 41.25,
+      "startMs": 41010,
+      "endMs": 41250,
+      "startFrame": 1230,
+      "endFrame": 1238
+    },
+    {
+      "text": "should",
+      "start": 41.25,
+      "end": 41.41,
+      "startMs": 41250,
+      "endMs": 41410,
+      "startFrame": 1238,
+      "endFrame": 1242
+    },
+    {
+      "text": "understand",
+      "start": 41.41,
+      "end": 41.83,
+      "startMs": 41410,
+      "endMs": 41830,
+      "startFrame": 1242,
+      "endFrame": 1255
+    },
+    {
+      "text": "if",
+      "start": 41.83,
+      "end": 42.15,
+      "startMs": 41830,
+      "endMs": 42150,
+      "startFrame": 1255,
+      "endFrame": 1264
+    },
+    {
+      "text": "they",
+      "start": 42.15,
+      "end": 42.27,
+      "startMs": 42150,
+      "endMs": 42270,
+      "startFrame": 1264,
+      "endFrame": 1268
+    },
+    {
+      "text": "do",
+      "start": 42.27,
+      "end": 42.45,
+      "startMs": 42270,
+      "endMs": 42450,
+      "startFrame": 1268,
+      "endFrame": 1274
+    },
+    {
+      "text": "a",
+      "start": 42.45,
+      "end": 42.59,
+      "startMs": 42450,
+      "endMs": 42590,
+      "startFrame": 1274,
+      "endFrame": 1278
+    },
+    {
+      "text": "hot",
+      "start": 42.59,
+      "end": 42.81,
+      "startMs": 42590,
+      "endMs": 42810,
+      "startFrame": 1278,
+      "endFrame": 1284
+    },
+    {
+      "text": "dog",
+      "start": 42.81,
+      "end": 43.03,
+      "startMs": 42810,
+      "endMs": 43030,
+      "startFrame": 1284,
+      "endFrame": 1291
+    },
+    {
+      "text": "eating",
+      "start": 43.03,
+      "end": 43.27,
+      "startMs": 43030,
+      "endMs": 43270,
+      "startFrame": 1291,
+      "endFrame": 1298
+    },
+    {
+      "text": "contest,",
+      "start": 43.27,
+      "end": 43.53,
+      "startMs": 43270,
+      "endMs": 43530,
+      "startFrame": 1298,
+      "endFrame": 1306
+    },
+    {
+      "text": "they",
+      "start": 43.53,
+      "end": 43.81,
+      "startMs": 43530,
+      "endMs": 43810,
+      "startFrame": 1306,
+      "endFrame": 1314
+    },
+    {
+      "text": "shouldn't",
+      "start": 43.81,
+      "end": 43.87,
+      "startMs": 43810,
+      "endMs": 43870,
+      "startFrame": 1314,
+      "endFrame": 1316
+    },
+    {
+      "text": "stop",
+      "start": 43.87,
+      "end": 44.15,
+      "startMs": 43870,
+      "endMs": 44150,
+      "startFrame": 1316,
+      "endFrame": 1324
+    },
+    {
+      "text": "doing",
+      "start": 44.15,
+      "end": 44.47,
+      "startMs": 44150,
+      "endMs": 44470,
+      "startFrame": 1324,
+      "endFrame": 1334
+    },
+    {
+      "text": "that.",
+      "start": 44.47,
+      "end": 44.91,
+      "startMs": 44470,
+      "endMs": 44910,
+      "startFrame": 1334,
+      "endFrame": 1347
+    },
+    {
+      "text": "Have",
+      "start": 45.29,
+      "end": 45.49,
+      "startMs": 45290,
+      "endMs": 45490,
+      "startFrame": 1359,
+      "endFrame": 1365
+    },
+    {
+      "text": "you",
+      "start": 45.49,
+      "end": 45.57,
+      "startMs": 45490,
+      "endMs": 45570,
+      "startFrame": 1365,
+      "endFrame": 1367
+    },
+    {
+      "text": "ever",
+      "start": 45.57,
+      "end": 45.71,
+      "startMs": 45570,
+      "endMs": 45710,
+      "startFrame": 1367,
+      "endFrame": 1371
+    },
+    {
+      "text": "been",
+      "start": 45.71,
+      "end": 45.87,
+      "startMs": 45710,
+      "endMs": 45870,
+      "startFrame": 1371,
+      "endFrame": 1376
+    },
+    {
+      "text": "to",
+      "start": 45.87,
+      "end": 45.99,
+      "startMs": 45870,
+      "endMs": 45990,
+      "startFrame": 1376,
+      "endFrame": 1380
+    },
+    {
+      "text": "a",
+      "start": 45.99,
+      "end": 46.11,
+      "startMs": 45990,
+      "endMs": 46110,
+      "startFrame": 1380,
+      "endFrame": 1383
+    },
+    {
+      "text": "hot",
+      "start": 46.11,
+      "end": 46.25,
+      "startMs": 46110,
+      "endMs": 46250,
+      "startFrame": 1383,
+      "endFrame": 1388
+    },
+    {
+      "text": "dog",
+      "start": 46.25,
+      "end": 46.41,
+      "startMs": 46250,
+      "endMs": 46410,
+      "startFrame": 1388,
+      "endFrame": 1392
+    },
+    {
+      "text": "eating",
+      "start": 46.41,
+      "end": 46.57,
+      "startMs": 46410,
+      "endMs": 46570,
+      "startFrame": 1392,
+      "endFrame": 1397
+    },
+    {
+      "text": "contest?",
+      "start": 46.57,
+      "end": 46.83,
+      "startMs": 46570,
+      "endMs": 46830,
+      "startFrame": 1397,
+      "endFrame": 1405
+    },
+    {
+      "text": "No,",
+      "start": 46.89,
+      "end": 47.05,
+      "startMs": 46890,
+      "endMs": 47050,
+      "startFrame": 1407,
+      "endFrame": 1412
+    },
+    {
+      "text": "those",
+      "start": 47.39,
+      "end": 47.71,
+      "startMs": 47390,
+      "endMs": 47710,
+      "startFrame": 1422,
+      "endFrame": 1431
+    },
+    {
+      "text": "people",
+      "start": 47.71,
+      "end": 48.21,
+      "startMs": 47710,
+      "endMs": 48210,
+      "startFrame": 1431,
+      "endFrame": 1446
+    },
+    {
+      "text": "should",
+      "start": 48.21,
+      "end": 48.43,
+      "startMs": 48210,
+      "endMs": 48430,
+      "startFrame": 1446,
+      "endFrame": 1453
+    },
+    {
+      "text": "really",
+      "start": 48.43,
+      "end": 48.65,
+      "startMs": 48430,
+      "endMs": 48650,
+      "startFrame": 1453,
+      "endFrame": 1460
+    },
+    {
+      "text": "stop",
+      "start": 48.65,
+      "end": 48.89,
+      "startMs": 48650,
+      "endMs": 48890,
+      "startFrame": 1460,
+      "endFrame": 1467
+    },
+    {
+      "text": "eating",
+      "start": 48.89,
+      "end": 49.25,
+      "startMs": 48890,
+      "endMs": 49250,
+      "startFrame": 1467,
+      "endFrame": 1478
+    },
+    {
+      "text": "that",
+      "start": 49.25,
+      "end": 49.51,
+      "startMs": 49250,
+      "endMs": 49510,
+      "startFrame": 1478,
+      "endFrame": 1485
+    },
+    {
+      "text": "stuff.",
+      "start": 49.51,
+      "end": 49.89,
+      "startMs": 49510,
+      "endMs": 49890,
+      "startFrame": 1485,
+      "endFrame": 1497
+    }
+  ],
+  "speakerCrop": [
+    {
+      "from": 0,
+      "to": 11,
+      "centerX": 0.54,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    },
+    {
+      "from": 11,
+      "to": 43,
+      "centerX": 0.4,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "host"
+    },
+    {
+      "from": 43,
+      "to": 143,
+      "centerX": 0.62,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    },
+    {
+      "from": 143,
+      "to": 209,
+      "centerX": 0.42,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "host"
+    },
+    {
+      "from": 209,
+      "to": 348,
+      "centerX": 0.58,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    },
+    {
+      "from": 348,
+      "to": 419,
+      "centerX": 0.42,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "host"
+    },
+    {
+      "from": 419,
+      "to": 561,
+      "centerX": 0.48,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    },
+    {
+      "from": 561,
+      "to": 649,
+      "centerX": 0.735,
+      "centerY": 0.45,
+      "zoom": 1.25,
+      "who": "guest"
+    },
+    {
+      "from": 649,
+      "to": 738,
+      "centerX": 0.42,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "host"
+    },
+    {
+      "from": 738,
+      "to": 882,
+      "centerX": 0.47,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    },
+    {
+      "from": 882,
+      "to": 960,
+      "centerX": 0.745,
+      "centerY": 0.45,
+      "zoom": 1.25,
+      "who": "guest"
+    },
+    {
+      "from": 960,
+      "to": 1084,
+      "centerX": 0.5,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "host"
+    },
+    {
+      "from": 1084,
+      "to": 1137,
+      "centerX": 0.52,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    },
+    {
+      "from": 1137,
+      "to": 1201,
+      "centerX": 0.45,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "host"
+    },
+    {
+      "from": 1201,
+      "to": 1355,
+      "centerX": 0.5,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    },
+    {
+      "from": 1355,
+      "to": 1396,
+      "centerX": 0.47,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "host"
+    },
+    {
+      "from": 1396,
+      "to": 1419,
+      "centerX": 0.58,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    },
+    {
+      "from": 1419,
+      "to": 1456,
+      "centerX": 0.45,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "host"
+    },
+    {
+      "from": 1456,
+      "to": 1510,
+      "centerX": 0.5,
+      "centerY": 0.5,
+      "zoom": 1.0,
+      "who": "guest"
+    }
+  ],
+  "overlays": [
+    {
+      "src": "overlays/pretzel-px-01.jpg",
+      "from": 26,
+      "duration": 48,
+      "kind": "photo",
+      "credit": ""
+    },
+    {
+      "src": "overlays/emoji/emoji_u1f9e0.png",
+      "from": 88,
+      "duration": 30,
+      "kind": "emoji",
+      "credit": ""
+    },
+    {
+      "src": "overlays/hot-dog-01.jpg",
+      "from": 158,
+      "duration": 54,
+      "kind": "photo",
+      "credit": "JEEPERSMEDIA / CC BY 2.0"
+    },
+    {
+      "src": "overlays/emoji/emoji_u1f914.png",
+      "from": 232,
+      "duration": 36,
+      "kind": "emoji",
+      "credit": ""
+    },
+    {
+      "src": "overlays/emoji/emoji_u1f924.png",
+      "from": 360,
+      "duration": 33,
+      "kind": "emoji",
+      "credit": ""
+    },
+    {
+      "src": "overlays/emoji/emoji_u26be.png",
+      "from": 525,
+      "duration": 42,
+      "kind": "emoji",
+      "credit": ""
+    },
+    {
+      "src": "overlays/emoji/emoji_u1f645.png",
+      "from": 622,
+      "duration": 36,
+      "kind": "emoji",
+      "credit": ""
+    },
+    {
+      "src": "overlays/emoji/emoji_u1f914.png",
+      "from": 750,
+      "duration": 33,
+      "kind": "emoji",
+      "credit": ""
+    },
+    {
+      "src": "overlays/baseball-px-01.jpg",
+      "from": 918,
+      "duration": 42,
+      "kind": "photo",
+      "credit": ""
+    },
+    {
+      "src": "overlays/emoji/emoji_u1f964.png",
+      "from": 1062,
+      "duration": 42,
+      "kind": "emoji",
+      "credit": ""
+    },
+    {
+      "src": "overlays/emoji/emoji_u1f32d.png",
+      "from": 1194,
+      "duration": 36,
+      "kind": "emoji",
+      "credit": ""
+    },
+    {
+      "src": "overlays/hot-dog-eating-contest-01.jpg",
+      "from": 1278,
+      "duration": 60,
+      "kind": "photo",
+      "credit": "FOCUSC / CC BY 2.0"
+    },
+    {
+      "src": "overlays/emoji/emoji_u1f633.png",
+      "from": 1407,
+      "duration": 27,
+      "kind": "emoji",
+      "credit": ""
+    }
+  ],
+  "brolls": [],
+  "caption": {
+    "enabled": true,
+    "centerY": 880,
+    "fontSize": 78
+  },
+  "outroCta": {
+    "enabled": true,
+    "style": "minimal",
+    "channelName": "Lyrical Lemonade TV",
+    "seriesName": "New York Nights With Steven Savoca",
+    "ctaText": "watch the full episode on YouTube 👇",
+    "durationInFrames": 75
+  },
+  "sfx": {
+    "enabled": true,
+    "auto": true,
+    "masterVolume": 0.25,
+    "minGapFrames": 8
+  },
+  "showSafeZone": false
+}

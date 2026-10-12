@@ -9,6 +9,11 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Windows consoles default to cp1252; help texts and logs contain emoji (Style B overlays)
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+
 # ---------------------------------------------------------------- paths
 
 def skill_root() -> Path:
@@ -129,6 +134,27 @@ def video_id_from_url(url: str) -> str:
 
 
 # ---------------------------------------------------------------- io
+
+def env_key(name: str) -> str | None:
+    """Read an API key from the environment, falling back to <project>/.env."""
+    if os.environ.get(name):
+        return os.environ[name].strip()
+    env_file = skill_root().parent / ".env"
+    if env_file.exists():
+        for line in env_file.read_text(encoding="utf-8").splitlines():
+            key, sep, value = line.partition("=")
+            if sep and key.strip() == name:
+                return value.strip().strip('"').strip("'") or None
+    return None
+
+
+def emoji_filename(emoji: str) -> str:
+    """Noto Emoji PNG name for an emoji, e.g. '🤔' -> 'emoji_u1f914.png' (variation selector FE0F dropped)."""
+    cps = [f"{ord(ch):x}" for ch in emoji if ord(ch) != 0xFE0F]
+    if not cps:
+        fail(f"Not an emoji: {emoji!r}")
+    return "emoji_u" + "_".join(cps) + ".png"
+
 
 def write_json(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)

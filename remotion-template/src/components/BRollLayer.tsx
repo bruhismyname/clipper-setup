@@ -2,6 +2,7 @@ import React from "react";
 import {
   OffthreadVideo,
   Img,
+  Sequence,
   interpolate,
   spring,
   staticFile,
@@ -27,7 +28,7 @@ export const BRollLayer: React.FC<{
   const { fps } = useVideoConfig();
 
   const activeBRoll = brolls.find(
-    (b) => frame >= b.startFrame && frame <= b.endFrame
+    (b) => frame >= b.startFrame && frame <= b.endFrame,
   );
 
   if (!activeBRoll) return null;
@@ -44,24 +45,42 @@ export const BRollLayer: React.FC<{
   });
 
   const enterScale = interpolate(enterSpring, [0, 1], [0.92, 1]);
-  const enterOpacity = interpolate(age, [0, 5], [0, 1], { extrapolateRight: "clamp" });
-  const exitOpacity = interpolate(remaining, [0, 6], [0, 1], { extrapolateLeft: "clamp" });
+  const enterOpacity = interpolate(age, [0, 5], [0, 1], {
+    extrapolateRight: "clamp",
+  });
+  const exitOpacity = interpolate(remaining, [0, 6], [0, 1], {
+    extrapolateLeft: "clamp",
+  });
   const opacity = Math.min(enterOpacity, exitOpacity);
 
   // Ken Burns subtle zoom effect (1.0x -> 1.07x over duration)
-  const kbZoom = activeBRoll.kenBurns !== false
-    ? interpolate(age, [0, Math.max(1, duration)], [1.0, 1.07], { extrapolateRight: "clamp" })
-    : 1.0;
+  const kbZoom =
+    activeBRoll.kenBurns !== false
+      ? interpolate(age, [0, Math.max(1, duration)], [1.0, 1.07], {
+          extrapolateRight: "clamp",
+        })
+      : 1.0;
 
   const resolvedSrc = (() => {
-    if (activeBRoll.src.startsWith("http://") || activeBRoll.src.startsWith("https://")) {
+    if (
+      activeBRoll.src.startsWith("http://") ||
+      activeBRoll.src.startsWith("https://")
+    ) {
       return activeBRoll.src;
     }
-    const baseName = activeBRoll.src.replace(/\\/g, "/").split("/").pop() || activeBRoll.src;
+    // "broll/x.mp4" stays a public/ subpath; absolute paths fall back to their file name in public/
+    const normalized = activeBRoll.src.replace(/\\/g, "/");
+    const isAbsolute =
+      /^[a-zA-Z]:\//.test(normalized) || normalized.startsWith("/");
+    const publicPath = normalized.includes("public/")
+      ? normalized.split("public/").pop()!
+      : isAbsolute
+        ? normalized.split("/").pop()!
+        : normalized;
     try {
-      return staticFile(baseName);
+      return staticFile(publicPath);
     } catch {
-      return baseName;
+      return publicPath;
     }
   })();
 
@@ -82,7 +101,8 @@ export const BRollLayer: React.FC<{
           opacity,
           borderRadius: 24,
           overflow: "hidden",
-          boxShadow: "0 35px 80px rgba(0,0,0,0.9), 0 0 0 3px rgba(255,255,255,0.15)",
+          boxShadow:
+            "0 35px 80px rgba(0,0,0,0.9), 0 0 0 3px rgba(255,255,255,0.15)",
           backgroundColor: "#000000",
         }}
       >
@@ -95,54 +115,23 @@ export const BRollLayer: React.FC<{
           }}
         >
           {activeBRoll.type === "video" ? (
-            <OffthreadVideo
-              src={resolvedSrc}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
+            <Sequence
+              key={`${activeBRoll.src}-${activeBRoll.startFrame}`}
+              from={activeBRoll.startFrame}
+              layout="none"
+            >
+              <OffthreadVideo
+                src={resolvedSrc}
+                muted
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </Sequence>
           ) : (
             <Img
               src={resolvedSrc}
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           )}
-        </div>
-
-        {/* B-Roll Tag Badge */}
-        <div
-          style={{
-            position: "absolute",
-            top: 18,
-            left: 20,
-            backgroundColor: "rgba(15, 23, 42, 0.85)",
-            backdropFilter: "blur(8px)",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
-            borderRadius: 10,
-            padding: "6px 14px",
-            display: "flex",
-            alignItems: "center",
-            gap: 8,
-          }}
-        >
-          <div
-            style={{
-              width: 8,
-              height: 8,
-              borderRadius: "50%",
-              backgroundColor: "#FF3B30",
-              boxShadow: "0 0 8px #FF3B30",
-            }}
-          />
-          <span
-            style={{
-              color: "#FFFFFF",
-              fontSize: 13,
-              fontWeight: 800,
-              letterSpacing: "1.2px",
-              textTransform: "uppercase",
-            }}
-          >
-            B-ROLL ARCHIVE
-          </span>
         </div>
 
         {/* Caption / Source Credit */}
@@ -153,7 +142,8 @@ export const BRollLayer: React.FC<{
               bottom: 0,
               left: 0,
               right: 0,
-              background: "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.85) 100%)",
+              background:
+                "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.85) 100%)",
               padding: "24px 20px 14px 20px",
               display: "flex",
               justifyContent: "space-between",
@@ -166,7 +156,13 @@ export const BRollLayer: React.FC<{
               </span>
             )}
             {activeBRoll.sourceCredit && (
-              <span style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, fontWeight: 600 }}>
+              <span
+                style={{
+                  color: "rgba(255,255,255,0.7)",
+                  fontSize: 13,
+                  fontWeight: 600,
+                }}
+              >
                 {activeBRoll.sourceCredit}
               </span>
             )}
@@ -199,10 +195,17 @@ export const BRollLayer: React.FC<{
         }}
       >
         {activeBRoll.type === "video" ? (
-          <OffthreadVideo
-            src={resolvedSrc}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
+          <Sequence
+            key={`${activeBRoll.src}-${activeBRoll.startFrame}`}
+            from={activeBRoll.startFrame}
+            layout="none"
+          >
+            <OffthreadVideo
+              src={resolvedSrc}
+              muted
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </Sequence>
         ) : (
           <Img
             src={resolvedSrc}

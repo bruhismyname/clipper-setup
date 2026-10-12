@@ -62,7 +62,7 @@ python3 -c "import yt_dlp; print('yt-dlp', yt_dlp.version.__version__)" 2>/dev/n
 ```
 
 - Missing `yt-dlp` is not fatal; `fetch.py` falls back to the YouTube innertube API using the standard library.
-- `faster-whisper` is only needed for videos with no caption track.
+- `faster-whisper` is needed for videos with no caption track **and for multi-speaker podcasts/interviews**: YouTube's auto-captions on two-person conversations often scramble word order (e.g. "Could from The Big Bang Theory because he's nice Leonard"), which produces wrong subtitles. For those, run with `--download-video --transcript whisper --force`.
 
 ## Usage
 
@@ -110,7 +110,7 @@ fetch -> heatmap -> transcript -> score -> [AGENT: judge + write hooks]
 
 1. **Fetch**: metadata, Most-Replayed curve, caption track. yt-dlp if present, innertube otherwise.
 2. **Heatmap**: smooth the curve, find local maxima, rank peaks by intensity.
-3. **Transcript**: word-level timestamps (json3 preferred, faster-whisper fallback) normalized to `{start, end, text}`.
+3. **Transcript**: word-level timestamps (json3 preferred, faster-whisper fallback, or forced with `--transcript whisper` for multi-speaker podcasts) normalized to `{start, end, text}`. Cached in the run dir; `--force` redoes it.
 4. **Score**: generate candidates from retention peaks and transcript signals, snap edges to word boundaries, dedupe overlaps, score each candidate.
 5. **Agent Evaluation**: Read `candidates.json`, apply `references/scoring-rubric.md`, and write the final hooks.
 
@@ -184,7 +184,8 @@ Present final results using this JSON schema:
 | Symptom | Cause | Action |
 |---|---|---|
 | `Could not read video metadata` | Private, region-locked, or age-gated video | Ask user for a public URL |
-| `No word-level captions ... no audio to transcribe` | No caption track and no downloaded video | Re-run with `--keep-source` or install `faster-whisper` |
+| `No word-level captions ... no audio to transcribe` | No caption track and no downloaded video | Re-run with `--download-video`, or install `faster-whisper` |
+| Subtitle words out of order | YouTube auto-captions on a multi-speaker conversation | Re-run with `--download-video --transcript whisper --force` |
 | `no retention heatmap available` | Video too new or low views | Continue with transcript analysis and note caveat |
 | Very few candidates | Sparse speech or heavy background music | Note that source format may not fit dialogue extraction |
 | Captions in wrong language | Multi-language track selected | Re-run with `--language <code>` |
